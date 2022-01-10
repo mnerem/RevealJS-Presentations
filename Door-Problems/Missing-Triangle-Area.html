@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, minimum-scale=.02, user-scalable=yes">
+
+		<title>Door Problems</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/custom_v2.css">
+		<link rel="stylesheet" href="dist/theme/openstax.css">
+        <link rel="stylesheet" href="plugin/chalkboard/style.css">
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">       
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section>
+                    <div class="overl">
+                        <h3>Missing Area</h3>
+                    </div>
+                    
+                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: 'c/t',
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: true,
+
+                preloadIframes: true,
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: null,
+				        src: null,
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+     //               custom: [
+   //                     {
+  //                          title: 'Links',
+ //                       },
+//                    ],
+                },
+
+    
+                
+                
+            
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                         ]
+			});
+            
+		</script>
+    
+
+	</body>
+</html>

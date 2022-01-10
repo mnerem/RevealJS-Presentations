@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, minimum-scale=.02, user-scalable=yes">
+
+		<title>PHYS 232 Course (Fall 2021)</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/custom_v2.css">
+		<link rel="stylesheet" href="dist/theme/openstax.css">
+        <link rel="stylesheet" href="plugin/chalkboard/style.css">
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">       
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section>
+                    <div class="overl">
+                        <h3>University Physics II</h3>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Polarizer#/media/File:Circular.Polarization.Circularly.Polarized.Light_Left.Hand.Animation.305x190.255Colors.gif"
+							target='_blank' alt="Hello there">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Circular.Polarization.Circularly.Polarized.Light_Left.Hand.Animation.305x190.255Colors.gif'
+							width=600px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h5>PHYS 232N: November 30, 2021</h5>
+                    </div>
+                </section>
+                
+                <!--Participation-->    
+				<section>
+					<h4 class="overl">PQ-20 Question 1</h4>
+					<p>
+						Unpolarized rays of light from the Sun pass through a series of linear polarization filters.
+						The initial intensity is $I_0$ = 1380 W/m2. 
+						What is the final output intensity when ...
+						<br>
+						(a) two polarizers are $90^\circ$ to each other
+							<br>
+							<img src='figures/PQ-20/polarizers-malus-law-a.svg' width=600px>
+						<br>
+						(b) a third polarizer is inserted between the two at $60^\circ$.
+							<br>
+							<img src='figures/PQ-20/polarizers-malus-law-b.svg' width=600px>
+					</p>
+					
+				</section>
+
+				<section>
+					<h4 class="overl">PQ-20 Question 2</h4>
+					<p>
+						While visiting a national laboratory you accidentally drop your precious calculator 
+						in a large tank filled with a clear substance. 
+						Assume you are 1.75 m tall and are standing 3.45 m from the edge of the tank. You can just
+						barely see your calculator. 
+						Given the depth, $d$, of the tank and the horizontal position of the calculator, $x$,
+						what is the index of refraction of the liquid?
+						<br>
+						Givens: nair = 1.00, $x$=0.59 m, $d$=19.10 m,
+						<br>
+					</p>
+						<img src='figures/PQ-20/tank-snells-law.svg' width=275px>
+					
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: 'c/t',
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: true,
+
+                preloadIframes: true,
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: null,
+				        src: null,
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+     //               custom: [
+   //                     {
+  //                          title: 'Links',
+ //                       },
+//                    ],
+                },
+
+    
+                
+                
+            
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                         ]
+			});
+            
+		</script>
+    
+
+	</body>
+</html>
