@@ -2,6 +2,7 @@
 - [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
 
 ## University Physics
+- [PHYS232 Intro Slides](University-Physics/PHYS232-Course-Intro.html)
 
 ## Door Problems
 

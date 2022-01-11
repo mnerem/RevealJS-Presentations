@@ -1,0 +1,687 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, minimum-scale=.02, user-scalable=yes">
+
+		<title>PHYS 232 Course Intro (Spring 2022)</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="dist/theme/openstax.css">
+        <link rel="stylesheet" href="plugin/chalkboard/style.css">
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">       
+	</head>
+	<body>
+		<div class="reveal">
+            <div class="header">
+                <!--
+                <a href="https://openstax.org/details/books/astronomy" target='_blank'>
+                <img src="http://staxlogos.openstax.org/OSX-Stacked-TM-RGB-150dpi-2016.png" />
+                </a>
+                -->
+            </div>
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section>
+                    <div class="overl">
+                        <h1>University Physics II</h1>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Electrostatic_induction#/media/File:Electrostatic_induction.svg" target='_blank' alt="Hello there">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=1000px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h3>Old Dominion University: PHYS 232N</h3>
+                    </div>
+                </section>
+
+                <!-- Professor Information-->
+                <section>
+                <div class="overl">
+                    <h2>Instructor's Information</h2>
+                </div>
+                    <div class="mathbox">
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                      <tr>
+                                        <td class="tg-km2t"><b>Instructor</b>:</td>
+                                        <td class="tg-zv4m">Dr. Perry Nerem</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tg-km2t"><b>Office</b>:</td>
+                                        <td class="tg-zv4m">OCNPS 221</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tg-km2t"><b>Phone</b>:</td>
+                                        <td class="tg-zv4m"><span style="font-weight:400;font-style:normal">757-683-3611</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tg-km2t"><b>Email</b>:</td>
+                                        <td class="tg-zv4m">mnerem@odu.edu</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="tg-km2t"><b>Office Hours</b>:</td>
+                                        <td class="tg-zv4m">MWF 12:30pm - 1:30pm</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <img src="./figures/00-course-intro/Perry_Nerem_reduced.jpg"
+                                     width=275px
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    
+                    Instructor's Toplogical Optics Research
+                    <img class="r-frame" src=./figures/00-course-intro/About-Nerem-Research.svg>
+                </section>
+
+                <!--Course Grade-->
+                <section>
+                    <div class="overl">
+                    <h2>Course Grade</h2>
+                    </div>
+                    <div id=container>
+                        <table>
+                            <td>
+                                <!--Sliders table -->
+                                <div class="mathbox">
+                                <font size="7">
+                                    <table border="0">
+                                        <tr>
+                                            <td style='border:none'>15% Lab:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Participation:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Homework:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 1:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 2:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 3:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Final Exam:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    The lowest test grade is dropped!
+                                                        <p>
+                                    <b>Course Grade =  <span id=CourseGrade></span></b>
+                                                            </p>
+                                </font>
+                                </div>
+                            </td>
+                            <td>
+                                This is the formula used to calculate your grade.
+                                <div class="mathbox">
+                                $$
+                                    \begin{align}
+                                        \text{Grade}\, = \,& .15*(\text{Lab}) + \, \\
+                                            & .15*(\text{Participation}) + \, \\
+                                            & .20*(\text{Homework}) + \, \\
+                                            & .15*\left(
+                                                \begin{matrix}
+                                                \text{SUM}[T1,T2,T3] \\ -\,\text{MIN}[T1,T2,T3]
+                                                \end{matrix}
+                                                \right) + \, \\
+                                            & .20*(\text{Final Exam})
+                                    \end{align}
+                                $$
+                                </div>
+                                
+                                $\leftarrow$ Tool to help you figure out your grade.
+                            </td>
+                        </table>
+                    </div>
+
+                    <!--Script to calculate course grade with sliders                    -->
+                    <script>
+
+                    var sliders = document.querySelectorAll('#container input'),
+                        displays = document.querySelectorAll('#container input + span'),
+                        total = document.getElementById('CourseGrade');
+                    +function(updater) {
+                      updater();
+                      document.getElementById('container').addEventListener('input', updater, false);
+                    }(function() {
+                      for(var i = 0; i < sliders.length; i++) {
+                        var val = sliders[i].value, display = displays[i];
+                        display.textContent = val;
+                      }
+
+                      var lab_grade = +document.getElementById("Lab_Slider").value;
+                      var p_grade = +document.getElementById("Par_Slider").value;
+                      var hw_grade = +document.getElementById("HW_Slider").value;
+                      var t1_grade = +document.getElementById("T1_Slider").value;
+                      var t2_grade = +document.getElementById("T2_Slider").value;
+                      var t3_grade = +document.getElementById("T3_Slider").value;
+                      var fe_grade = +document.getElementById("FE_Slider").value;
+
+                      var course_grade = +lab_grade*.15 + 
+                                         +p_grade*.15 + 
+                                         +hw_grade*.20 +
+                                         ((t1_grade + t2_grade + t3_grade) -
+                                          Math.min(t1_grade,t2_grade,t3_grade))*.15 +
+                                         +fe_grade*.20
+                                         ;
+
+                      CourseGrade.textContent = course_grade.toFixed(2);
+                    });
+
+                    </script>
+                </section>
+
+                <!--Text Book-->
+                <section>
+                    <div class="overl"><h2>Textbook</h2></div>
+                    University Physics Edition 15 by Young and Freedman.
+                    <br>
+                    <a href="https://www.pearson.com/us/higher-education/program/Young-Modified-Mastering-Physics-with-Pearson-e-Text-Standalone-Access-Card-for-University-Physics-with-Modern-Physics-15th-Edition/PGM2485469.html" target="_blank">
+                        <img src="./figures/PHYS232/cover.jpg" class="r-frame">
+                    </a>
+                    <br>
+                    Access to E-Text a part of your Mastering Physics on Blackboard.
+                </section>
+
+                
+                <!--Laboratory-->
+                <section>
+                    <h1 class="overl">Laboratory Sessions</h1>
+                        <a href="https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction#/media/File:Faraday_emf_experiment.svg" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Faraday_emf_experiment.svg" class="r-frame" width=800px>
+                        </a>
+                        
+                    <br>
+                        <ul>
+                            <li>11 labs this semester</li>
+                            <li>You must go to the lab you are register for</li>
+                            <li>Lab manual provided through Blackboard</li>
+                            <li>Contact your lab TA for lab specific questions</li>
+                        </ul>
+                </section>
+                                
+                <!--Participation-->
+                <section>
+                    <h3 class="overl">Participation</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Every lecture we will split into groups <br> and work problems together</li>
+                                    <li>Scan and upload copies of your <br> <b>handwritten</b> notes</li>
+                                    <li>Notes from tablet devices are acceptable</li>
+                                    <li>Upload work though Blackboard</li>
+                                    <li><b>Files must be PDF documents</b></li>
+                                    <li>Minimum one page long and <br> must have your name on it</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <img src="./figures/PHYS232/00-example-problem-1.png" height=950 class="r-frame">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!--Homework-->
+                <section>
+                    <div class="overl"><h2>Homework</h2></div>
+                    <table>
+                        <tr>
+                            <td>
+   
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Mastering Physics (found through Blackboard)</li>
+                                    <li>5% penalty per day late (max penalty of 60%)</li>
+                                    <li>Last day to submit any assignment is the last day of lecture</li>
+                                </ul>
+                                <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" target="_blank">
+                                    <img class="r-frame" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Electromagnet.gif" width=800px>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!--Test-->
+                <section>
+                    <div class="overl"><h2>Test</h2></div>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Three test through out the semester and a cumulative final exam.</li>
+                                    <li>Your lowest test grade is dropped</li>
+                                    <li>No late test will be offered</li>
+                                </ul>
+                                <table border="1" class="dataframe">
+                                  <thead>
+                                    <tr style="text-align: right;">
+                                      <th>Date</th>
+                                      <th>Test</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Feb 10</td>
+                                      <td>Test 1 (Ch 21–24)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Mar 22 </td>
+                                      <td>Test 2 (Ch 25–28)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>April 14</td>
+                                      <td>Test 3 (Ch 29-33)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>April 28</td>
+                                      <td>Final Exam</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/Electric_field#/media/File:Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG/800px-Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG" height=600px class="r-frame">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!--Calendar iframe-background-->
+                <section data-background-iframe="https://calendar.google.com/calendar/embed?src=c_dueio48jni4eha12s1qa45f6c4%40group.calendar.google.com&ctz=America%2FNew_York"
+                         data-background-interactive>
+                    
+                </section>
+                
+                <!--Math review-->
+                <section>
+                    <div class='overl'><h1>Math Overview</h1></div>
+                </section>
+                
+                <!--Scientific Notation (grams in pencil-->
+                <section>
+                    <div class='overl'><h2>Scientific Notation</h2></div>
+                    Mass of an object that contains
+                    <b>three hundred-thousand-billion-billion atoms of carbon</b>
+                    given that one carbon atom has a mass of
+                    <b>twenty billion-billion-billionths of a kilogram</b>?
+                    
+                    <p class="fragment">
+                        $$
+                            \begin{align*}
+                                M&=N_\text{atoms}\times m_\text{C} \\
+                                &=300,000,000,000,000,000,000,000 \times \\
+                                & \qquad 0.000,000,000,000,000,000,000,000,02\,\text{kg} \\
+                                &=\big(3E23\big)\big(2E-26\big)\text{kg}\\
+                                &=\big(3\times 2\big)\big(10^{23}\times10^{-26}\big)\,\text{kg}\\
+                                &=6\times10^{23-26}\,\text{kg} \\
+                                &=6E-3\,\text{kg} \\
+                                &=6\,\text{grams}
+                            \end{align*}
+                        $$
+                        Scientific notation gives us a way to easily communicate the “size” of a number.
+                    </p>
+                    
+                </section>
+
+                <!--Scientific Notation practice-->
+                <section>
+                    <div class="overl"><h2>Scientific Notation: More Examples</h2></div>
+                    <br>
+                    <iframe src="https://janus.astro.umd.edu/astro/scinote/" width=1920px height=600px class="r-frame"></iframe>
+                    <br>
+                    <font size="4">
+                        Scientific Notation written by Dr. Douglas P. Hamilton and Mike Asbury in February 1997.
+                        Revised by Curran Muhlberger and Dr. Douglas P. Hamilton in December 2007.
+                    </font>
+                </section>
+                
+                <!--Scientific Notation hard example-->
+                <section>
+                    <h2 class="overl">Scientific Notation: You try</h2>
+                    Question: Simplify $\dfrac{8\times10^{1024}}{4\times10^{1020}}\times0.5\times10^{-3}$
+                    <p class="fragment">
+                        <br>
+                            \begin{align}
+                                &=\frac{8}{4}10^{1024-1020}\times\frac{1}{2}10^{-3} \\
+                                &=\frac{8}{4\times2}10^4\times10^{-3}\\
+                                &=\frac{8}{8}10^{4-3}\\
+                                &=1\times10^1\\
+                                &=10
+                            \end{align}
+                    </p>
+                </section>
+                
+                <!--Slopes of Curves-->
+                <section>
+                    <h2 class="overl">Slope of a Curve</h2>
+                    <table>
+                        <tr>
+                            <td width=700px>
+                                Where and how you measure the slope are very important.
+                                <br>
+                                <img src="./figures/PHYS232/slopes.svg" width=700px>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Draw a tangent line <br> (just touches the curve at a point)</li>
+                                    <li>Approximate the slope using a "rise-run" to get the <b>average</b> rate of change
+                                        $$\text{Slope} \approx \frac{\Delta y}{\Delta x}$$
+                                    </li>
+                                    <li>Derivative tells us the <b>instantaneous</b> rate of change
+                                        $$\text{Slope} = \frac{d y}{d x}$$
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!--Quadratics: $ax^2+bx+c=0$-->
+                <section>
+                    <h2 class="overl">Quadratics: $ax^2+bx+c=0$</h2>
+                    <img src="./figures/PHYS232/quadratics.svg">
+                    <br>
+                    $$\text{Quadratic Formula: } x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+                    Physics tells us if we use the $+$ or $-$ solution (or complex numbers).
+                </section>
+                
+                <!--Angle geometry-->
+                <section>
+                    <h2 class="overl">Keeping track of angles</h2>
+                    <p class="fragment fade-left">
+                        <img src="./figures/PHYS232/tracking-angles.svg" height=950px>
+                    </p>
+                </section>
+                
+                <!--Circle Geometry-->
+                <section>
+                    <h2 class="overl">Geometry</h2>
+                    <img src="./figures/00-course-intro/sphere-geometry.svg" height=900px>
+                </section>
+                
+                <!--Trigonometry-->
+                <section>
+                    <h2 class="overl">Trigonometry</h2>
+                    <b>The math of right triangles!</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <br>
+                                <img src="./figures/00-course-intro/Right-Triangle-1.png" width=600px>
+                            </td>
+                            <td>
+                                \begin{gather*}
+                                    \text{SOH-CAH-TOA} \\
+                                    \sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}=\frac{b}{c} \\
+                                    \cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}=\frac{a}{c} \\
+                                    \tan\theta=\frac{\text{opposite}}{\text{adjacent}}=\frac{b}{a}
+                                \end{gather*}
+                            </td>
+                        </tr>
+                    </table>
+                    Pythagoras’ Theorem: $a^2 + b^2 = c^2$
+                    <br>
+                    Angles measured in <b>radians</b>: $2\pi\,$rad=$360^\circ$
+                </section>
+                
+                <!--Problem solving guide-->
+                <section>
+                    <h2 class="overl">Problem Solving Guide</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Draw a picture <br>
+                                        <div class="fragment">"Do I use sin or cosine here?"<br></div>
+                                        <div class="fragment">- <b>DRAW A PICTURE!</b></div>
+                                    </li>
+                                    <li class="fragment">Identify givens and <font color="red">unknowns</font></li>
+                                    <li class="fragment">Determine relevant physics.
+                                        <ul class="fragment">
+                                            <li>Kinematics</li>
+                                            <li>Forces</li>
+                                            <li>Energy</li>
+                                            <li>Vector sums</li>
+                                            <li>$\vdots$</li>
+                                        </ul>
+                                    </li>
+                                    <li class="fragment">Solve for <font color="red">unknowns</font> using <font color="blue">variables</font>!</li>
+                                    <li class="fragment">Checks units are consistent</li>
+                                    <li class="fragment">Plug in numerical values</li>
+                                </ul>
+                            </td>
+                            <td width=500px>
+                                <img class="r-frame" src="./figures/PHYS232/gibbon.jpg" width=400px>
+                                <br> A gibbon attempting to solve a physics problem.
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="fragment">
+                        Reflect on your work. Is you answer a reasonable value? Did every step make sense?
+                    </div>
+                </section>
+                
+                <section>
+                    <h1 class="overl">Participation Question</h1>
+                    Bruce is jogging at pace of 2.5 m/s and passes Tony who is sitting on a park bench. 
+                    When Bruce is 3 m ahead, Tony gets up and tries to catch up to Bruce. 
+                    Tony runs with a constant acceleration of 1 m/s$^2$. At what time
+                    will Tony catch up to Bruce? The following are the standard kinematic equations.
+
+                    \begin{gather}
+                        x_f=x_i+v_0t+\tfrac{1}{2}at^2 \\
+                        v_f=v_i+at \\
+                        v_f^2=v_i^2+2a\Delta x
+                    \end{gather}
+                </section>
+
+                <section>
+                    <h1 class="overl">Participation Question</h1>
+                    Acetaminophen (a fever-reducer) should have a maximum dose of 20 mg/kg 
+                    (meaning: 20 mg of acetaminophen per kilogram of child). 
+                    Acetaminophen for children is supplied as a solution at concentration of 160mg/5mL.
+
+                    <ul>
+                        <li>
+                            What is the maximum amount (in mg) of acetaminophen a 12 kg child should receive?
+                        </li>
+                        <li>
+                            What is the maximum volume of solution in (mL) that child can receive ?
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1 class="overl">Participation Question</h1>
+                    A satellite in space is firing thrusters A and B with magnitudes |A| = 3N and 
+                    |B| = 6N at the shown angles.
+                    
+                    <br>
+                    <img src="figures/Vector-Math-1.png" width=600px>
+
+                    <br>
+                    <ol>
+                        <li>Draw the vector addition of $\vec{A}$ and $\vec{B}$.</li>
+                        <li>Find the x and y components of $\vec{A}$ and $\vec{B}$.</li>
+                        <li>Find $\vec{C}$ such that $\vec{A}+\vec{B}+\vec{C}=\vec{0}$</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h1 class="overl">Final Thoughts</h1>
+                    <table>
+                        <tr>
+                            <td width=600px>
+                                <ul>
+                                    <li>Read the book</li>
+                                    <li>Practice problems</li>
+                                    <li>Don’t be afraid of math</li>
+                                    <li><b>Study the concepts</b></li>
+                                    <li><b>READ THE BOOK!</b></li>
+                                    <li>Volunteer note-sharing</li>
+                                    <li>Always ask questions!</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://apod.nasa.gov/apod/ap100224.html" target="_blank">
+                                    <img class="r-frame" src="./figures/00-course-intro/installingcupola_nasa_big.jpg" width=450px>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: 'c/t',
+                width: 1920,
+                height: 1080,
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: true,
+
+                preloadIframes: true,
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: null,
+				        src: null,
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+     //               custom: [
+   //                     {
+  //                          title: 'Links',
+ //                       },
+//                    ],
+                },
+
+    
+                
+                
+            
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                         ]
+			});
+            
+		</script>
+    
+
+	</body>
+</html>
