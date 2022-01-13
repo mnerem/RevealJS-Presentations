@@ -1,4 +1,5 @@
 ## Astronomy
+[Google Sites page hosting astronomy slides](https://sites.google.com/odu.edu/oduAstronomy)
 - [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
 
 ## University Physics
