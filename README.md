@@ -7,6 +7,7 @@
 ## Door Problems
 
 ## Science Fun Facts
+- [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes.html)
 
 
 ---
