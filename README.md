@@ -6,6 +6,7 @@
 - [PHYS232 Intro Slides](University-Physics/PHYS232-Course-Intro.html)
 
 ## Door Problems
+- [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area.html)
 
 ## Science Fun Facts
 - [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes.html)
