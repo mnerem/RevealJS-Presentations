@@ -3,7 +3,7 @@
 - [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
 
 ## University Physics
-- [PHYS232 Intro Slides](University-Physics/00_Course_Intro/PHYS232-Course-Intro.html)
+- [PHYS232 Intro Slides](University-Physics/00-Course_Intro/PHYS232-Course-Intro.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 
 ## Door Problems
