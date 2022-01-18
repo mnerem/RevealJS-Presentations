@@ -3,13 +3,15 @@
 - [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
 
 ## University Physics
-- [PHYS232 Intro Slides](University-Physics/PHYS232-Course-Intro.html)
+- [PHYS232 Intro Slides](University-Physics/00_Course_Intro/PHYS232-Course-Intro.html)
+- [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 
 ## Door Problems
-- [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area.html)
+- [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area/Missing-Triangle-Area.html)
 
 ## Science Fun Facts
-- [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes.html)
+- [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes/Optimal-Boarding-Planes.html)
+- [How Many Games of Chess](SFF/Games-Of-Chess/How-Many-Games-of-Chess.html)
 
 
 ---

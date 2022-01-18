@@ -6,17 +6,17 @@
 
 		<title>Astro Course Intro Slides</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="css/custom.css">
-		<link rel="stylesheet" href="dist/theme/openstax.css">
-        <link rel="stylesheet" href="plugin/chalkboard/style.css">
-        <script src="plugin/chalkboard/plugin.js"></script>
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../css/custom.css">
+		<link rel="stylesheet" href="../dist/theme/openstax.css">
+        <link rel="stylesheet" href="../plugin/chalkboard/style.css">
+        <script src="../plugin/chalkboard/plugin.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
         <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">       
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">       
 	</head>
 	<body>
 		<div class="reveal">
@@ -316,7 +316,7 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    The lowest test grade is dropped!
+                                    Lowest test grade is automatically dropped!
                                                         <p>
                                     <b>Course Grade =  <span id=CourseGrade></span></b>
                                                             </p>
@@ -460,6 +460,7 @@
                 <section>
                     <h2 class="overl">Proportionality</h2>
                     Distance travel is proportional to the time you were traveling
+                    <br>
                     <ul>
                         <li>Traveling at 60 mph for one hour you’ll cover 60 miles</li>
                         <li>Traveling at 60 mph for two hours you’ll cover 120 miles</li>
@@ -469,6 +470,7 @@
                     
                     <div class="fragment">
                         Time to travel a distance is inversely proportional to speed
+                        <br>
                         <ul>
                             <li>Traveling 20 miles at 30 mph takes 40 minutes</li>
                             <li>Traveling 20 miles at 60 mph takes 20 minutes</li>
@@ -566,12 +568,12 @@
 			</div>
 		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/math/math.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/menu/menu.js"></script>
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/math/math.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
         <!--Reveal.js scripts-->
 		<script>
 			// More info about initialization & config:
@@ -646,17 +648,7 @@
                     themes: true,
                     transitions: true,
                     numbers: false,
-     //               custom: [
-   //                     {
-  //                          title: 'Links',
- //                       },
-//                    ],
                 },
-
-    
-                
-                
-            
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [  RevealMarkdown, 
@@ -669,7 +661,5 @@
 			});
             
 		</script>
-    
-
 	</body>
 </html>

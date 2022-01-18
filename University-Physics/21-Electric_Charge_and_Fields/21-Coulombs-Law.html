@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+        <title>Coulomb's Law</title>
+
+        <meta name="description" content="Calc base physics II lectures on electric forces.">
+	    <meta name="author" content="Perry Nerem">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../css/custom_v2.css">
+		<link rel="stylesheet" href="../../dist/theme/openstax.css">
+        <link rel="stylesheet" href="../../plugin/chalkboard/style.css">
+        <script src="../../plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css"> 
+        <script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/math/math.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+        <script src="../../plugin/menu/menu.js"></script>
+        <script src="../../plugin/audio-slideshow/plugin.js"></script>
+        <script src="../../plugin/audio-slideshow/RecordRTC.js"></script>
+        <script src="../../plugin/audio-slideshow/recorder.js"></script>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section class="center">
+                    <div class="overl">
+                        <h3>University Physics II</h3>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Electrostatic_induction#/media/File:Electrostatic_induction.svg" target='_blank' alt="Hello there">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=600px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h3>Electric Forces and Fields</h3>
+                    </div>
+                </section>
+                
+                <!--Participation-->
+                <section>
+                    <section>
+                        <h3 class="overl">PQ: Proton Bags</h3>
+                        <p>
+                        Imagine you had two bags of protons, each bag has a mass of $m=9$g. You take one bag to the North pole and
+                        your friend takes the other bag to the South pole.
+                        <ol>
+                            <li>
+                                What is the gravitational attraction between the two bags at the poles?
+                                (the radius of Earth is 6.378$\times10^6$ m)
+                            </li>
+                            <li>
+                                How many protons are in each bag?
+                            </li>
+                            <li>
+                                Compare the forces. How strong are they?
+                            </li>
+                        </ol>
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="overl">PQ: Proton Bags (Solution)</h3>
+                        <img src="./globe-proton-bag.svg" width=400px class="r-frame">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h4 class="overl">PQ: Electric Force Vectors</h4>
+                        What is the net force on charge $q_2$?
+                        <br>
+                        <img src="3-charge-force-vector-sum.svg" width=500px>
+                        <br>
+                        <table>
+                            <tr><b>Givens</b></tr>
+                            <tr>
+                                <td>
+                                    $q_1$ = 8 nC (negative)
+                                </td>
+                                <td>
+                                    $q_2$ = 2 nC (negative)
+                                </td>
+                                <td>
+                                    $q_3$ = 4 nC (negative)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>$h$ = 0.20 m</td>
+                                <td>$d$ = 0.15 m</td>
+                                <td>$b$ = 0.25 m</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h4 class="overl">PQ: Electric Force Vectors (Solution)</h4>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h3 class="overl">PQ: Charge Pendulum Equilibrium</h3>
+                        <p>
+                            Two identical pendulums of length $L$, mass $m$, and some charge $q$ 
+                            are at equilibrium at angle $\theta$.
+                            <br>
+                            What is the magnitude of the charge $q$?
+                            <br>
+                        </p>
+                        <img src="pendulum-charge-equilibrium.svg" width=500px class="r-frame">
+                        <br>
+                        Givens: 
+                            $L$=1.23m,
+                            $m$=22.85g,
+                            $\theta$=30.18$^\circ$.
+                    </section>
+                    <section>
+                        <h3 class="overl">PQ: Charge Pendulum Equilibrium (Solution)</h3>
+                    </section>
+                </section>
+
+                <section>
+                    <h3 class="overl">PHET E-Field-Simulation</h3>
+                    <iframe src="https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_en.html"
+                        width="800"
+                        height="600"
+                        allowfullscreen>
+                </iframe>
+                </section>
+                <section>
+                    <h3 class="overl">PQ: E-field Two Charges</h3>
+                    Draw what the electric field looks like around this charge distribution.
+                    <br>
+                    <img src="charges-efield-1.png" width=500px>
+                    <br>
+                    Write an expression for the net electric field for any arbitrary height $y$ along the $y$-axis.
+                </section>
+                
+			</div>
+		</div>
+
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                mouseWheel: true,
+                slideNumber: 'c/t',
+                //autoSlide: 5000,
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: false,
+
+                preloadIframes: true,
+
+                audio: {
+					prefix: 'chalkboard/',
+					suffix: '.ogg',
+					defaultDuration: 5,
+//					textToSpeechURL: "http://api.voicerss.org/?key=[YOUR_KEY]&hl=en-gb&c=ogg&src=",
+					advance: 500,
+					autoplay: false,
+					defaultText: true,
+					playerOpacity: 0.0,
+				},
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: './',
+				        src: "./kinematics-problem.json",
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+                    markers: true,
+                },
+                                
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                            RevealAudioSlideshow, 
+                            RevealAudioRecorder
+                         ]
+			});
+            
+		</script>
+    <a href="https://www.odu.edu/physics" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
+        src="../figures/odu-secondarytm-2color-1.png" width=100px></a>
+	</body>
+</html>

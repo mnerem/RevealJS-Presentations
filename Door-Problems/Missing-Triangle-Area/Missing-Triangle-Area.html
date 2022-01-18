@@ -4,83 +4,57 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, minimum-scale=.02, user-scalable=yes">
 
-		<title>PHYS 232 Course (Fall 2021)</title>
+		<title>Door Problems: Missing Triangle</title>
 
-		<link rel="stylesheet" href="../dist/reset.css">
-		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../css/custom_v2.css">
-		<link rel="stylesheet" href="../dist/theme/openstax.css">
-        <link rel="stylesheet" href="../plugin/chalkboard/style.css">
-        <script src="../plugin/chalkboard/plugin.js"></script>
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../css/custom_v2.css">
+		<link rel="stylesheet" href="../../dist/theme/openstax.css">
+        <link rel="stylesheet" href="../../plugin/chalkboard/style.css">
+        <script src="../../plugin/chalkboard/plugin.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
         <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="../plugin/highlight/monokai.css">       
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css">       
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 
                 <!-- Title Slide-->
-                <section>
-                    <div class="overl">
-                        <h3>University Physics II</h3>
-                    </div>
-                    <a href="https://en.wikipedia.org/wiki/Polarizer#/media/File:Circular.Polarization.Circularly.Polarized.Light_Left.Hand.Animation.305x190.255Colors.gif"
-							target='_blank' alt="Hello there">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d1/Circular.Polarization.Circularly.Polarized.Light_Left.Hand.Animation.305x190.255Colors.gif'
-							width=600px class="r-frame">
-                    </a>
-                    <div class="overl">
-                    <h5>PHYS 232N: November 30, 2021</h5>
-                    </div>
+                <section> 
+                    <div class="overl"> <h3>Missing Area</h3></div>
+					Why is a unit square added in the second arrangement?
+					<br>
+					<img src="triangle-missing-area.svg" width=1000px class="r-frame">
                 </section>
-                
-                <!--Participation-->    
-				<section>
-					<h4 class="overl">PQ-20 Question 1</h4>
-					<p>
-						Unpolarized rays of light from the Sun pass through a series of linear polarization filters.
-						The initial intensity is $I_0$ = 1380 W/m2. 
-						What is the final output intensity when ...
-						<br>
-						(a) two polarizers are $90^\circ$ to each other
-							<br>
-							<img src='figures/PQ-20/polarizers-malus-law-a.svg' width=600px>
-						<br>
-						(b) a third polarizer is inserted between the two at $60^\circ$.
-							<br>
-							<img src='figures/PQ-20/polarizers-malus-law-b.svg' width=600px>
-					</p>
-					
-				</section>
 
-				<section>
-					<h4 class="overl">PQ-20 Question 2</h4>
-					<p>
-						While visiting a national laboratory you accidentally drop your precious calculator 
-						in a large tank filled with a clear substance. 
-						Assume you are 1.75 m tall and are standing 3.45 m from the edge of the tank. You can just
-						barely see your calculator. 
-						Given the depth, $d$, of the tank and the horizontal position of the calculator, $x$,
-						what is the index of refraction of the liquid?
-						<br>
-						Givens: nair = 1.00, $x$=0.59 m, $d$=19.10 m,
-						<br>
-					</p>
-						<img src='figures/PQ-20/tank-snells-law.svg' width=275px>
-					
-				</section>
+				<section> 
+                    <div class="overl"> <h3>Missing Area</h3></div>
+					Why is a unit square added in the second arrangement?
+					<br>
+					<img src="triangle-missing-area-angles.svg" width=1000px class="r-frame">
+					<br>
+					The blue and red triangles are not similar triangles 
+                </section>
+
+				<section> 
+                    <div class="overl"> <h3>Missing Area</h3></div>
+					An exaggerated version of this problem that makes it clearer where the extra area comes from.
+					<br>
+					<img src="triangle-missing-area-exaggerated.svg" width=1000px class="r-frame">
+					<br>
+                </section>
 			</div>
 		</div>
 
-		<script src="../dist/reveal.js"></script>
-		<script src="../plugin/math/math.js"></script>
-		<script src="../plugin/notes/notes.js"></script>
-		<script src="../plugin/markdown/markdown.js"></script>
-		<script src="../plugin/highlight/highlight.js"></script>
-        <script src="../plugin/menu/menu.js"></script>
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/math/math.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+        <script src="../../plugin/menu/menu.js"></script>
         <!--Reveal.js scripts-->
 		<script>
 			// More info about initialization & config:
@@ -154,6 +128,11 @@
                     transitions: false,
                 },
 
+    
+                
+                
+            
+
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [  RevealMarkdown, 
                             RevealHighlight, 
@@ -165,5 +144,7 @@
 			});
             
 		</script>
+    
+
 	</body>
 </html>
