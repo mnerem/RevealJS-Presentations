@@ -35,7 +35,7 @@
 		<div class="reveal">
 			<div class="slides">
                 <!-- Title Slide-->
-                <section>
+                <section data-audio-src="audio/0.0.webm;codecs=opus">
 					<h2 class="overl">Science Fun Fact</h2>
 					<img class="r-frame" width=500px src="chess-start-config.svg"
 					<br>
@@ -43,7 +43,7 @@
 					<h3 class="overl">How do computers play chess?</h3>
                 </section>
 
-				<section>
+				<section data-audio-src="audio/1.0.webm;codecs=opus">
 					<h2 class="overl">Simple Game Example</h2>
 					Lets play a simple game.
 					<br>
@@ -56,20 +56,20 @@
 					<img class="r-frame" src="simple-game.svg" width=600px>
 				</section>
 
-				<section>
+				<section data-audio-src="audio/2.0.webm;codecs=opus">
 					<h3 class="overl">Simple Game Version 2</h3>
 					<img class="r-frame" src="simple-game-v2.svg" width=800px>
 				</section>
 
-                <section>
+                <section data-audio-src="audio/3.0.webm;codecs=opus">
                     <h3 class="overl">Consider Just the First Move</h3>
 					There are 20 possible first moves.
 					<br>
 					<div class="r-stack">
-						<img class="fragment fade-out" data-fragment-index="0" src="chess-start-config-opening-moves.svg" width=400px class="r-frame">
-						<img class="fragment current-visible" data-fragment-index="0" src="chess-start-config-opening-moves-branches.svg" width=800px>
-						<img class="fragment current-visible" data-fragment-index="1" src="chess-start-config-opening-moves-branches-pick-1.svg" width=800px>
-						<img class="fragment" data-fragment-index="2" src="chess-start-config-opening-moves-branches-pick-2.svg" width=800px>
+						<img class="fragment fade-out" data-fragment-index="0" data-audio-src="audio/3.0.0.webm;codecs=opus" src="chess-start-config-opening-moves.svg" width=400px class="r-frame">
+						<img class="fragment current-visible" data-fragment-index="0" data-audio-src="audio/3.0.1.webm;codecs=opus" src="chess-start-config-opening-moves-branches.svg" width=800px>
+						<img class="fragment current-visible" data-fragment-index="1" data-audio-src="audio/3.0.2.webm;codecs=opus" src="chess-start-config-opening-moves-branches-pick-1.svg" width=800px>
+						<img class="fragment" data-fragment-index="2" data-audio-src="audio/3.0.3.webm;codecs=opus" src="chess-start-config-opening-moves-branches-pick-2.svg" width=800px>
 					</div>
 					<div class="r-stack">
 						<ul>
@@ -80,12 +80,14 @@
 					</div>
 				</section>
 
-				<section>
+				<section data-audio-src="audio/4.0.webm;codecs=opus" >
 					<h3 class="overl">How many games of chess exist?</h3>
 					The actually number has not been computed but there are a few estimates.
-					<br> <br>
-					<b class="r-frame">Shannon's Number: $10^{120}$</b>
+					<br><br>
+                    <div class="mathbox">
+                        <b>Shannon's Number: $10^{120}$</b>
 					<br>
+                    </div>
 					<br>
 					On average, a player has 30 moves and a game last about 40 turns
 					\begin{equation}
@@ -97,7 +99,7 @@
 					Approximately $10^{53}$ atoms in the universe.
 				</section>
 
-				<section>
+				<section data-audio-src="audio/5.0.webm;codecs=opus" >
 					<h3 class="overl">How Many Sensible Games?</h3>
 						Assume players only have 3 "sensible" moves per turn.
 						\begin{equation}
@@ -142,7 +144,7 @@
 					advance: 500,
 					autoplay: false,
 					defaultText: true,
-					playerOpacity: 0.0,
+					playerOpacity: 0.2,
 				},
 
 				chalkboard: {
