@@ -67,6 +67,9 @@ table td, table td * {
   line-height: 20px;
 }
 
-.fontsize {
-  font-size: 80px
+.twocolumn {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
 }
