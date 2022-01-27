@@ -37,6 +37,7 @@
 - [PHYS232 Intro Slides](University-Physics/00-Course_Intro/PHYS232-Course-Intro.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
+- [23: Electric Potential](University-Physics/23-Electric_Potential/23-Electric_Potential.html)
 
 ## Door Problems
 - [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area/Missing-Triangle-Area.html)
