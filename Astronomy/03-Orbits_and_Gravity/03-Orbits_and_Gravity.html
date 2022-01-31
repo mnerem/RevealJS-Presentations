@@ -78,13 +78,13 @@
         </section>
     </section>    <section>
         <section class="center">
-        <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-2-newtons-great-synthesis target="_blank"> <font style="color: white;">3.2 Newtonâs Great Synthesis</font></a></h2></section>
+        <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-2-newtons-great-synthesis target="_blank"> <font style="color: white;">3.2 Newton's Great Synthesis</font></a></h2></section>
             <section> <h3 class="overl">Subsection slide</h3>
         </section>
         </section>
     </section>    <section>
         <section class="center">
-        <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-3-newtons-universal-law-of-gravitation target="_blank"> <font style="color: white;">3.3 Newtonâs Universal Law of Gravitation</font></a></h2></section>
+        <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-3-newtons-universal-law-of-gravitation target="_blank"> <font style="color: white;">3.3 Newton's Universal Law of Gravitation</font></a></h2></section>
             <section> <h3 class="overl">Subsection slide</h3>
         </section>
         </section>
@@ -97,14 +97,129 @@
     </section>    <section>
         <section class="center">
         <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-5-motions-of-satellites-and-spacecraft target="_blank"> <font style="color: white;">3.5 Motions of Satellites and Spacecraft</font></a></h2></section>
-            <section> <h3 class="overl">Subsection slide</h3>
-        </section>
+            <section> <h3 class="overl">Newton's Cannonball</h3>
+				<img src="Earth.svg"
+				style="position:absolute;"
+				>
+				<canvas id="trailCanvas" 
+						width="500" 
+						height="500" 
+						style="position:absolute">
+					Canvas not supported; please update your browser.
+				</canvas>
+				<canvas id="Newton_Cannon_Canvas" 
+						width="500" 
+						height="500" 
+						style="position:relative; border:1px solid #000000;">
+					Canvas not supported; please update your browser.
+				</canvas>
+				<br>
+				<input type="button" value="Fire!" onclick="fireProjectile();">
+				<font size=4>
+					Initial speed = <span id="speedReadout">3000</span> m/s 
+				</font>
+				<input type="range" 
+					   min="0" max="8000" 
+					   step="100" 
+					   value="3000" oninput="showSpeed();" onchange="showSpeed();"
+					   id="speedSlider"
+				>
+				<input type="button" value="Clear" onclick="clearTrails();">
+				<br>
+				<a href="https://physics.weber.edu/schroeder/html5/default.html" target="_blank">
+					Simulation of Newton's cannonball.
+				</a>
+        	</section>
+			<script>
+				// Javascript for plotting the Newton's cannonball goes here
+				//-----------------------------------------------------------------------------------//
+				var Newton_Cannon_Canvas = document.getElementById("Newton_Cannon_Canvas");
+				var trailCanvas = document.getElementById("trailCanvas");
+				var speedReadout = document.getElementById("speedReadout");
+				var speedSlider = document.getElementById("speedSlider");
+				var theContext = Newton_Cannon_Canvas.getContext("2d");
+				var trailContext = trailCanvas.getContext("2d")
+				var theCircle = Newton_Cannon_Canvas.getContext("2d");
+				// Define initial conditions
+				var earthRadius = 6371000;   // meters
+				var mountainHeight = earthRadius * 0.165;  // chosen to match image
+				var x = 0;
+				var y = earthRadius + mountainHeight;
+				var vx = Number(speedSlider.value);   // vx in meters per second
+				var vy = 0;		 // vy in meters per second
+				var metersPerPixel = earthRadius / (0.355 * Newton_Cannon_Canvas.width);
+				var earthRadius_pixel = earthRadius/metersPerPixel
+				var Projectile_Still_Flying=false;
+				// funtion to update text readout
+				function showSpeed() {
+    				speedReadout.innerHTML = speedSlider.value;
+				}
+				// Define function to Fire the cannon
+				var timer
+				function fireProjectile() {
+					window.clearTimeout(timer);
+					x = 0;
+					y = earthRadius + mountainHeight;
+					vx = Number(speedSlider.value);
+					vy = 0;
+					Projectile_Still_Flying=true;
+					moveProjectile();
+				}
+				// Define funtion to clear the canvas
+				function clearTrails() {
+					trailContext.clearRect(0,0,trailCanvas.width,trailCanvas.height);
+				}
+				// Define function to draw the projectile
+				function drawProjectile() {
+					// update values if projectile is still flying
+					if (Projectile_Still_Flying){
+						var metersPerPixel = earthRadius / (0.355 * Newton_Cannon_Canvas.width);
+						var pixelX = Newton_Cannon_Canvas.width/2 + x/metersPerPixel;
+						var pixelY = Newton_Cannon_Canvas.height/2 - y/metersPerPixel;
+						var r = Math.sqrt(x*x+y*y);
+					}
+					if (r>earthRadius){
+							theContext.clearRect(0,0,Newton_Cannon_Canvas.width,Newton_Cannon_Canvas.height);
+							theContext.beginPath();
+							theContext.arc(pixelX, pixelY, 5, 0, 2*Math.PI);
+							theContext.fillStyle = "rgba(220,80,80,255)";
+							theContext.fill();
+							theCircle.beginPath();
+							theCircle.arc(Newton_Cannon_Canvas.width/2,Newton_Cannon_Canvas.height/2,earthRadius_pixel,0,2*Math.PI)
+							theCircle.fillStyle = "blue";
+							theCircle.stroke();	
+							trailContext.fillRect(pixelX-0.5, pixelY-0.5, 1, 1);			
+					} else {
+						Projectile_Still_Flying=false
+					}
+				}
+				// Define function to move the projectile
+				function moveProjectile() {
+					var newtonG = 6.67e-11;        // grav. constant in SI units
+					var earthMass = 5.97e24;       // kilograms
+					var dt = 5;                    // time step in seconds
+					var r = Math.sqrt(x*x + y*y);
+					var accel = newtonG * earthMass / (r * r);  // magnitude of a
+					var ax = -accel * x / r;
+					var ay = -accel * y / r;
+					vx += ax * dt;
+					vy += ay * dt;
+					x += vx * dt;
+					y += vy * dt;
+					drawProjectile();
+					timer = window.setTimeout(moveProjectile, 1/48);
+				}
+				// start the move projectile program
+				moveProjectile();
+				//-----------------------------------------------------------------------------------//
+			</script>
+
         </section>
     </section>    <section>
         <section class="center">
         <h2 class="overl"><a href=https://openstax.org/books/astronomy/pages/3-6-gravity-with-more-than-two-bodies target="_blank"> <font style="color: white;">3.6 Gravity with More Than Two Bodies</font></a></h2></section>
             <section> <h3 class="overl">Subsection slide</h3>
-        </section>
+        	</section>
         </section>
     </section>
 
@@ -212,6 +327,7 @@
                          ]
 			});
             
+			
 		</script>
     <!--
     <a href="https://www.odu.edu/physics" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
