@@ -62,6 +62,7 @@
                     </section>
                     <section>
                         <h4 class="overl">PQ: Work Moving Charge (sol)</h4>
+						<img src="pq-work-moving-sol.png" width=1000px>
                     </section>
                 </section>
                 <section>
@@ -71,11 +72,78 @@
                             Rank from lowest to highest the potential energies of the
                             following configurations. Explain your conclusions.
                         </p>
-                        <img src="Charge-Configurations-labelled.svg" width=850px class="r-frame">
+                        <img src="Charge-Configurations.svg" width=850px class="r-frame">
                     </section>
                     <section>
                         <h4 class="overl">PQ: Ranking Configurations (sol)</h4>
+						<p>
+							The system's energy is greatest when the forces are mostly
+							repulsive, figure (A) has the highest concentration of like
+							charges near each other and therefore has the greatest potential energy.
+							Energy is the lowest when the system is mostly attractive forces,
+							therefore figure (B) has the lowest potential energy.
+							Figure (C) is an intermediate case between (A) and (B).
+							\begin{equation}
+								U_A>U_C>U_B
+							\end{equation}
+						</p>
+						Detail solution on next slide down.
                     </section>
+					<section>
+						<h4 class="overl">PQ: Ranking Configurations (sol part 2)</h4>
+						<font size=4>
+							<div class="twocolumn">
+								<div>
+								Label each charge and calculate the potential energies.
+								<br>
+								<img src="Charge-Configurations-labelled.svg" width=450px class="r-frame">
+								<br>
+								For any configuration of 4 charges, the potential energy is
+								\begin{equation}
+									U=\sum_{i < j} U_{ij} =
+										U_{1,2}+U_{1,3}+U_{1,4}+
+										U_{2,3}+U_{2,4}+
+										U_{3,4}
+								\end{equation}
+								$Q_1=Q_2=Q_3=-Q$, and $Q_4=+Q$
+									\begin{align}
+									U&=kQ^2\left(
+										\frac{1}{r_{1,2}}+\frac{1}{r_{1,3}}-\frac{1}{r_{1,4}}+
+										\frac{1}{r_{2,3}}-\frac{1}{r_{2,4}}-\frac{1}{r_{3,4}}
+									\right)
+									\\ & =\boxed{
+									kQ^2\left(
+										\frac{1}{r_{1,2}}+\frac{1}{r_{1,3}}+\frac{1}{r_{2,3}}
+										-\frac{1}{r_{1,4}}-\frac{1}{r_{2,4}}-\frac{1}{r_{3,4}}
+									\right)}
+									\end{align}
+								</div>
+								<div>
+									\begin{align}
+										U_A&=kQ^2\left(
+										\frac{1}{a}+\frac{1}{2a}+\frac{1}{a}-
+										\frac{1}{3a}-\frac{1}{2a}+\frac{1}{a}
+										\right)\\&
+										=\boxed{+\frac{2}{3}\frac{kQ^2}{a}}
+										&\\
+										U_B&=kQ^2\left(
+										\dfrac{1}{a}+\dfrac{1}{a}+\dfrac{1}{a}-
+										\dfrac{1}{\frac{a}{\sqrt{3}}}-
+										\dfrac{1}{\frac{a}{\sqrt{3}}}-
+										\dfrac{1}{\frac{a}{\sqrt{3}}}
+										\right)\\&
+										=\boxed{-3\dfrac{kQ^2}{a}\big(\sqrt{3}-1\big)}
+										&\\
+										U_C&=kQ^2\left(
+										\dfrac{1}{a}+\dfrac{1}{\sqrt{2}a}+\dfrac{1}{a}-
+										\dfrac{1}{a}-\dfrac{1}{\sqrt{2}a}-\dfrac{1}{a}
+										\right)\\&
+										=\boxed{0\text{J}}
+									\end{align}
+								</div>
+							</div>
+						</font>
+					</section>
 				</section>
 
 				<section>
@@ -91,6 +159,7 @@
 					</section>
 					<section>
 						<h3 class="overl">PQ: Potential Between Plates (sol)</h3>
+						<img src="pq-plot-potential-between-parallel-plates-sol.png" class="r-frame">
 					</section>
 				</section>
                

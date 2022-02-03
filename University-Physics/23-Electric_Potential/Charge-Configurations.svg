@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="Charge-Configurations-labelled.svg">
+   sodipodi:docname="Charge-Configurations.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -922,7 +922,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="display:inline">
+     style="display:none">
     <g
        transform="matrix(1.0070226,0,0,1.006843,-113.27281,-113.52542)"
        ns1:version="0.11.0"
