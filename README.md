@@ -41,6 +41,7 @@
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
 - [23: Electric Potential](University-Physics/23-Electric_Potential/23-Electric_Potential.html)
 - [24: Capacitance](University-Physics/24-Capacitors/24-Capacitors.html)
+- [25: VIR](University-Physics/25-VIR/25-VIR.html)
 
 ## Door Problems
 - [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area/Missing-Triangle-Area.html)
