@@ -1,12 +1,13 @@
 # Nerem Revealjs Presentations
 
 # Contents
-[Astronomy Slides](#Astronomy)
-[University Physics Slides](#University-Physics)
-[Door Problems](#Door-Problems)
-[Science Fun Facts](#Science-Fun-Facts)
-[Presentations](#Presentations)
-----
+- [Astronomy Slides](#Astronomy)
+- [University Physics Slides](#University-Physics)
+- [Door Problems](#Door-Problems)
+- [Science Fun Facts](#Science-Fun-Facts)
+- [Presentations](#Presentations)
+
+---
 
 ## Astronomy
 [Google Sites page hosting astronomy slides](https://sites.google.com/odu.edu/oduAstronomy)
