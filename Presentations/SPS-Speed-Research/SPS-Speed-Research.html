@@ -34,95 +34,192 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-background-color="RGB(20,75,152)">
 					<h2 class="overl">Hamiltonian <br>Topological Optics</h2>
 					<img src="initial-conditions.gif" height="400px" class="r-frame">
 					<h4 class="overl">Dr. M. Perry Nerem</h4>
 				</section>
+				
+				<section>
+					<h4 class="overl">About Me</h4>
+					<div class="mathbox">
+						<table>
+							<tr>
+								<td>
+									<table>
+										<tbody>
+										  <tr>
+											<td class="tg-km2t"><b>Instructor</b>:</td>
+											<td class="tg-zv4m">Dr. Perry Nerem</td>
+										  </tr>
+										  <tr>
+											  <td class="tg-km2t"><b>Office</b>:</td>
+											<td class="tg-zv4m">OCNPS 221</td>
+										  </tr>
+										  <tr>
+											  <td class="tg-km2t"><b>Phone</b>:</td>
+											<td class="tg-zv4m"><span style="font-weight:400;font-style:normal">757-683-3611</span></td>
+										  </tr>
+										  <tr>
+											  <td class="tg-km2t"><b>Email</b>:</td>
+											<td class="tg-zv4m">mnerem@odu.edu</td>
+										  </tr>
+										</tbody>
+									</table>
+								</td>
+								<td>
+									<img src="../../University-Physics/00-Course_Intro/Perry_Nerem_reduced.jpg"
+										 width=200px
+									>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<img class="r-frame" src=../../University-Physics/00-Course_Intro/About-Nerem-Research.svg width=800px>
+				</section>
+				
 
+				<section data-auto-animate>
+					<h3 class="overl">What is Topology</h3>
+					<div data-id="square2circle" style="height: 300px; background: RGB(80,80,220);">
+						<img src="square.svg">
+					</div>
+				</section>
 
-
-
-                <!-- Title Slide-->
-                <section data-audio-src="audio/0.0.webm;codecs=opus">
-					<h2 class="overl">Science Fun Fact</h2>
-					<img class="r-frame" width=500px src="chess-start-config.svg"
+				<section data-auto-animate>
+					<h3 class="overl">What is Topology</h3>
+					<div data-id="square2circle" style="height: 250px; background: RGB(220,80,80);">
+						<img src="circle.svg">
+					</div>
+					
+					Squares and circles divide space <br> into "inside" and "outside" regions.
 					<br>
-					<br>
-					<h3 class="overl">How do computers play chess?</h3>
-                </section>
+					They are topological similar.
+				</section>
 
-				<section data-audio-src="audio/1.0.webm;codecs=opus">
-					<h2 class="overl">Simple Game Example</h2>
-					Lets play a simple game.
+				<section>
+					<h3 class="overl">What is Topology</h3>
+					<b>Topology</b> studies the properties of an object under
+					<em>continuous transformations</em>.
 					<br>
+					<a href="https://en.wikipedia.org/wiki/Topology#/media/File:Mug_and_Torus_morph.gif" target="_blank">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Mug_and_Torus_morph.gif" width=400px class="r-frame">
+						<br>
+					</a>
+					A mug $=$ a donut (<em>torus</em>)
+				</section>
+
+				<section>
+					<h3 class="overl">Topological Physics</h3>
 					<ul>
-						<li>Start at the first node.</li>
-						<li>We alternate picking branches.</li>
-						<li>You want the lowest number, I want the highest number.</li>
+						<li>Look at material properties under deformations.</li>
+						<li>Eg: A topological insulator exploits the electrical properties in atom configurations.
+							<img src="TI-figur.svg" class="r-frame">
+						</li>
 					</ul>
-					<br>
-					<img class="r-frame" src="simple-game.svg" width=600px>
+				</section>
+				
+				<section>
+					<h3 class="overl">Topological Physics Example</h3>
+					A simple model of a topological insulator.
+					<img src="TI-electron-sheet-model.svg" class="r-frame">
+					Two sheets of electrons with anti-parallel magnetic fields. 
 				</section>
 
-				<section data-audio-src="audio/2.0.webm;codecs=opus">
-					<h3 class="overl">Simple Game Version 2</h3>
-					<img class="r-frame" src="simple-game-v2.svg" width=800px>
-				</section>
-
-                <section data-audio-src="audio/3.0.webm;codecs=opus">
-                    <h3 class="overl">Consider Just the First Move</h3>
-					There are 20 possible first moves.
-					<br>
-					<div class="r-stack">
-						<img class="fragment fade-out" data-fragment-index="0" data-audio-src="audio/3.0.0.webm;codecs=opus" src="chess-start-config-opening-moves.svg" width=400px class="r-frame">
-						<img class="fragment current-visible" data-fragment-index="0" data-audio-src="audio/3.0.1.webm;codecs=opus" src="chess-start-config-opening-moves-branches.svg" width=800px>
-						<img class="fragment current-visible" data-fragment-index="1" data-audio-src="audio/3.0.2.webm;codecs=opus" src="chess-start-config-opening-moves-branches-pick-1.svg" width=800px>
-						<img class="fragment" data-fragment-index="2" data-audio-src="audio/3.0.3.webm;codecs=opus" src="chess-start-config-opening-moves-branches-pick-2.svg" width=800px>
-					</div>
-					<div class="r-stack">
+				<section>
+					<h3 class="overl">Formulations of Physics</h3>
+					<font size=5>
 						<ul>
-							<li class="fragment" data-fragment-index="1">Your opponent has 20 possible moves from there.</li>
-							<li class="fragment" data-fragment-index="2">In this case you have 29 moves ...</li>
-							<li class="fragment" data-fragment-index="3"><b>After three moves there are over 1000 board states.</b></li>
+							<li>
+								<b>Newtonian</b> physics identifies particles and calculates forces on them.
+								\begin{equation}
+									\vec{F}=m\vec{a}
+								\end{equation}
+							</li>
+							<li class="fragment">
+								<b>Lagrangian</b> physics studies time evolution of generalized coordinates.
+								<table>
+									<tr>
+										<td>
+											<a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics#/media/File:PendulumWithMovableSupport.svg" target="_blank">
+												<img src="PendulumWithMovableSupport.svg" class="r-frame">
+											</a>
+										</td>
+										<td>
+											\begin{equation}
+												\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}_i}\right)
+												-\frac{\partial \mathcal{L}}{\partial q_i}=0
+											\end{equation}
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li class="fragment">
+								<b>Hamiltonian</b> physics deals with generalized coordinates and their momentum.
+								\begin{equation}
+									\dot{q}_i=\frac{\partial H}{\partial p_i}
+									, \quad
+									\dot{p}_i=-\frac{\partial H}{\partial q_i}
+								\end{equation}
+							</li>
 						</ul>
+					</font>
+				</section>
+
+				<section>
+					<h3 class="overl">Why use Hamiltonians?</h3>
+					<div class="fragment">
+						<em>Path</em> of ball down the ramp
+						<br>
+						<img src="ball-to-snells-law.svg" width="600px" class="r-frame"> 
+						<br>
+						matches <em>trajectory</em> of refracted light.
 					</div>
 				</section>
 
-				<section data-audio-src="audio/4.0.webm;codecs=opus" >
-					<h3 class="overl">How many games of chess exist?</h3>
-					The actually number has not been computed but there are a few estimates.
-					<br><br>
-                    <div class="mathbox">
-                        <b>Shannon's Number: $10^{120}$</b>
+				<section>
+					<h3 class="overl">Optomechanical Analogy</h3>
+					The Hamiltonian bridges motion of particles to waves!
+					<font size="5">
+						<br>
+						Fermat's Principle of Least Time: Light path minimizing time
+						<br>
+						Maupertuis' Principle of Least Action: Classical path minimizing action
+					</font>
 					<br>
-                    </div>
-					<br>
-					On average, a player has 30 moves and a game last about 40 turns
-					\begin{equation}
-						(30)\times(30)\times(30)\cdots
-						=(30)^{80} \approx 10^{120}
-					\end{equation}
-
-					<br>
-					Approximately $10^{53}$ atoms in the universe.
-				</section>
-
-				<section data-audio-src="audio/5.0.webm;codecs=opus" >
-					<h3 class="overl">How Many Sensible Games?</h3>
-						Assume players only have 3 "sensible" moves per turn.
+					<img src="Opto-Mechanical-Analogy-1.png" width="600px">
+					<div class="mathbox">
 						\begin{equation}
-							(3)\times(3)\times(3)\cdots
-							=(3)^{80} \approx 10^{40}
+							\int_\gamma n\hat{s}\cdot d\vec{q}
+							\leftrightsquigarrow
+							\int_\gamma|\vec{p}|\hat{p}\cdot d\vec{q}
 						\end{equation}
-						Every human playing unique games of chess a day, it will take 
-						<br>
-						100 quadillion <b>Galactic Years</b> to play all games.
-						<br>
-						<a href="https://en.wikipedia.org/wiki/Galactic_year#/media/File:Sun_in_orbit_around_Galactic_Centre.gif" target="_blank">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Sun_in_orbit_around_Galactic_Centre.gif" width=400px  class="r-frame">
-						</a>
+					</div>
 				</section>
+
+				<section>
+					<h3 class="overl">Topological Optics</h3>
+					Simulate optical paths using classical trajectories.
+					<table>
+						<tr>
+							<td>
+								<img src="Light-Pipe-Concept-1.png" width="400px">
+							</td>
+							<td>
+								<video data-autoplay controls height="400"
+									src="optical-topological-change-speed-up.mp4"
+									type="video/mp4">
+								</video>
+							</td>
+						</tr>
+					</table>
+					Numerically solve $\dot{x}=F(t,x)$ and you can start now!
+				</section>
+
+				<section>
+					<h2 class="overl">Questions?</h2>
+				</section>
+
 			</div>
 		</div>
 
@@ -141,7 +238,7 @@
                 transition: 'convex', // none/fade/slide/convex/concave/zoom
                 
                 // Vertical centering of slides
-                center: false,
+                center: true,
 
                 preloadIframes: true,
 
