@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 
-        <title>SPS Speed Research Presentation (Nerem)</title>
+        <title>Magnetism</title>
 
-        <meta name="description" content="A brief summary of Dr Nerem's Research to present to SPS Students">
+        <meta name="description" content="Calc base physics II lectures on Magnetic forces and fields">
 	    <meta name="author" content="Perry Nerem">
         <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
@@ -34,192 +34,128 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-color="RGB(20,75,152)">
-					<h2 class="overl">Hamiltonian <br>Topological Optics</h2>
-					<img src="initial-conditions.gif" height="400px" class="r-frame">
-					<h4 class="overl">Dr. M. Perry Nerem</h4>
-				</section>
-				
-				<section>
-					<h4 class="overl">About Me</h4>
-					<div class="mathbox">
-						<table>
-							<tr>
-								<td>
-									<table>
-										<tbody>
-										  <tr>
-											<td class="tg-km2t"><b>Instructor</b>:</td>
-											<td class="tg-zv4m">Dr. Perry Nerem</td>
-										  </tr>
-										  <tr>
-											  <td class="tg-km2t"><b>Office</b>:</td>
-											<td class="tg-zv4m">OCNPS 221</td>
-										  </tr>
-										  <tr>
-											  <td class="tg-km2t"><b>Phone</b>:</td>
-											<td class="tg-zv4m"><span style="font-weight:400;font-style:normal">757-683-3611</span></td>
-										  </tr>
-										  <tr>
-											  <td class="tg-km2t"><b>Email</b>:</td>
-											<td class="tg-zv4m">mnerem@odu.edu</td>
-										  </tr>
-										</tbody>
-									</table>
-								</td>
-								<td>
-									<img src="../../University-Physics/00-Course_Intro/Perry_Nerem_reduced.jpg"
-										 width=200px
-									>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<img class="r-frame" src=../../University-Physics/00-Course_Intro/About-Nerem-Research.svg width=800px>
-				</section>
-				
 
-				<section data-auto-animate>
-					<h3 class="overl">What is Topology</h3>
-					<div data-id="square2circle" style="height: 300px; background: RGB(80,80,220);">
-						<img src="square.svg">
-					</div>
-				</section>
-
-				<section data-auto-animate>
-					<h3 class="overl">What is Topology</h3>
-					<div data-id="square2circle" style="height: 250px; background: RGB(220,80,80);">
-						<img src="circle.svg">
-					</div>
-					
-					Squares and circles divide space <br> into "inside" and "outside" regions.
-					<br>
-					They are topologically similar.
-				</section>
+                <!-- Title Slide-->
+                <section class="center">
+                    <div class="overl">
+                        <h3>University Physics II</h3>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" 
+					   target='_blank'>
+                        <img src='Electromagnet.gif' width=500px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h3>Magnetism</h3>
+                    </div>
+                </section>
 
 				<section>
-					<h3 class="overl">What is Topology</h3>
-					<b>Topology</b> studies the properties of an object under
-					<em>continuous transformations</em>.
+					<h3 class="overl">Earth's Magnetic Field</h3>
+					Earth has a magnetic field that we <br> <em>roughly</em> estimate to be a bar magnet.
 					<br>
-					<a href="https://en.wikipedia.org/wiki/Topology#/media/File:Mug_and_Torus_morph.gif" target="_blank">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Mug_and_Torus_morph.gif" width=400px class="r-frame">
-						<br>
+					<a href="https://commons.wikimedia.org/wiki/File:Earth%27s_magnetic_field,_schematic.svg"
+					   target="_blank">
+					   <img src="Earth's_magnetic_field,_schematic.svg" class="r-frame" width="500px">
 					</a>
-					A mug $=$ a donut (<em>torus</em>)
-				</section>
-
-				<section>
-					<h3 class="overl">Topological Physics</h3>
-					<ul>
-						<li>Look at material properties under deformations.</li>
-						<li>Eg: A topological insulator exploits the electrical properties in atom configurations.
-							<img src="TI-figur.svg" class="r-frame">
-						</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h3 class="overl">Topological Physics Example</h3>
-					A simple model of a topological insulator.
-					<img src="TI-electron-sheet-model.svg" class="r-frame">
-					Two sheets of electrons with anti-parallel magnetic fields. 
-				</section>
-
-				<section>
-					<h3 class="overl">Formulations of Physics</h3>
-					<font size=5>
-						<ul>
-							<li>
-								<b>Newtonian</b> physics identifies particles and calculates forces on them.
-								\begin{equation}
-									\vec{F}=m\vec{a}
-								\end{equation}
-							</li>
-							<li class="fragment">
-								<b>Lagrangian</b> physics studies time evolution of generalized coordinates.
-								<table>
-									<tr>
-										<td>
-											<a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics#/media/File:PendulumWithMovableSupport.svg" target="_blank">
-												<img src="PendulumWithMovableSupport.svg" class="r-frame">
-											</a>
-										</td>
-										<td>
-											\begin{equation}
-												\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}_i}\right)
-												-\frac{\partial \mathcal{L}}{\partial q_i}=0
-											\end{equation}
-										</td>
-									</tr>
-								</table>
-							</li>
-							<li class="fragment">
-								<b>Hamiltonian</b> physics deals with generalized coordinates and their momentum.
-								\begin{equation}
-									\dot{q}_i=\frac{\partial H}{\partial p_i}
-									, \quad
-									\dot{p}_i=-\frac{\partial H}{\partial q_i}
-								\end{equation}
-							</li>
-						</ul>
-					</font>
-				</section>
-
-				<section>
-					<h3 class="overl">Why use Hamiltonians?</h3>
-					<div class="fragment">
-						<em>Path</em> of ball down the ramp
-						<br>
-						<img src="ball-to-snells-law.svg" width="600px" class="r-frame"> 
-						<br>
-						matches <em>trajectory</em> of refracted light.
-					</div>
-				</section>
-
-				<section>
-					<h3 class="overl">Optomechanical Analogy</h3>
-					The Hamiltonian bridges motion of particles to waves!
-					<font size="5">
-						<br>
-						Fermat's Principle of Least Time: Light path minimizing time
-						<br>
-						Maupertuis' Principle of Least Action: Classical path minimizing action
-					</font>
 					<br>
-					<img src="Opto-Mechanical-Analogy-1.png" width="600px">
-					<div class="mathbox">
-						\begin{equation}
-							\int_\gamma n\hat{s}\cdot d\vec{q}
-							\leftrightsquigarrow
-							\int_\gamma|\vec{p}|\hat{p}\cdot d\vec{q}
-						\end{equation}
+					$|\vec{B}_\text{Earth}|=[25,\,65]\mu$T
+				</section>
+
+				<section>
+					<h3 class="overl">Earth's Moving B-field</h3>
+					<div class="twocolumn">
+						<div>
+							<a href="https://websites.pmc.ucsc.edu/~glatz/geodynamo.html"
+							target="_blank">
+							<img src="earth-bfield-reversalanimation.gif" class="r-frame" width="500px">
+							</a>
+						</div>
+						<div>
+							Earth's magnetic field undergoes a reversal anywhere between<br>
+							0.1 and 50 million years.
+						</div>
 					</div>
 				</section>
 
 				<section>
-					<h3 class="overl">Topological Optics</h3>
-					Simulate optical paths using classical trajectories.
-					<table>
-						<tr>
-							<td>
-								<img src="Light-Pipe-Concept-1.png" width="400px">
-							</td>
-							<td>
-								<video data-autoplay controls height="400"
-									src="optical-topological-change-speed-up.mp4"
-									type="video/mp4">
-								</video>
-							</td>
-						</tr>
-					</table>
-					Numerically solve $\dot{x}=F(t,x)$ and you can start now!
+					<h3 class="overl">Earth Pole Terminology</h3>
+					<div class="twocolumn">
+						<div>
+							<div class="r-stack">
+								<img src="668px-Geographical_and_Magnetic_Poles-just-geo.png" class="fragment r-frame" data-fragment-index="0" >
+								<img src="668px-Geographical_and_Magnetic_Poles-no-mag-poles.png" class="fragment r-frame" data-fragment-index="1" >
+								<img src="668px-Geographical_and_Magnetic_Poles.png" class="fragment r-frame" data-fragment-index="2" >
+							</div>
+						</div>
+						<div>
+							<ul>
+								<li class="fragment" data-fragment-index="0" >
+									<font color="green">(A) Geographic Poles
+										<br> A1 - North Pole
+										<br> A2 - South Pole
+									</font>
+								</li>
+								<li class="fragment" data-fragment-index="1" >
+									<font color="blue">(B) Geomagnetic Poles
+										<br> B1 - North Pole
+										<br> B2 - South Pole
+									</font>
+								</li>
+								<li class="fragment" data-fragment-index="2" >
+									<font color="magenta">(C) Magnetic Poles
+										<br> C1 - South Pole
+										<br> C2 - North Pole
+									</font>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 
 				<section>
-					<h2 class="overl">Questions?</h2>
+					<h3 class="overl">Right Hand Rules</h3>
+					<a href="https://en.wikipedia.org/wiki/File:Right_hand_rule_cross_product.svg" target="_blank">
+						<img src="Right_hand_rule_cross_product.svg" class="r-frame">
+					</a>
 				</section>
 
+				<section>
+					<section>
+						<h3 class="overl">PQ: Proton RHR</h3>
+						<p>
+							In each case shown below, the magnetic field strength is <br> $|\vec{B}|$ = 9.7 T 
+							and a proton is moving at $v=3.35\times10^5$m/s. <br>
+							What is the direction and magnitude of the magnetic force on the charge?
+						</p>
+						<img src="RHR-examples.svg" width="800px">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Proton RHR (sol)</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3 class="overl">PQ: Velocity Selector</h3>
+						<p>
+							<font size="5">
+								Charge $Q=18$nC is fired into a region with a 
+								uniform magnetic field $|\vec{B}|=0.63$T out of the page
+								and a uniform electric field $|\vec{E}|=9.30\times10^6$V/m 
+								pointing in the upward direction.
+
+								<ul>
+									<li>What is the magnitude of the electric force on the charge?</li>
+									<li>How fast must the charge move such that magnetic force is equal to the electric force?</li>
+								</ul>
+							</font>
+						</p>
+						<img src="Magnetism-Velocity-Selector-Unknown-E-B-Out.svg" width="500px">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Velocity Selector (sol)</h3>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -238,7 +174,7 @@
                 transition: 'convex', // none/fade/slide/convex/concave/zoom
                 
                 // Vertical centering of slides
-                center: true,
+                center: false,
 
                 preloadIframes: true,
 
@@ -250,7 +186,7 @@
 					advance: 500,
 					autoplay: false,
 					defaultText: true,
-					playerOpacity: 0.2,
+					playerOpacity: 0.0,
 				},
 
 				chalkboard: {
@@ -300,7 +236,7 @@
 		                }
 		            }
 		        },
- 
+
                 menu: {
                     width: 'normal',
                     numbers: false,
@@ -322,7 +258,9 @@
 			});
             
 		</script>
+    <!--
     <a href="https://www.odu.edu/physics" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
-        src="../../odu-secondarytm-2color-1.png" width=100px></a>
+        src="../figures/odu-secondarytm-2color-1.png" width=100px></a>
+    -->
 	</body>
 </html>

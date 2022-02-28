@@ -9,7 +9,7 @@
 
 ---
 
-## Astronomy
+# Astronomy
 [Google Sites page hosting astronomy slides](https://sites.google.com/odu.edu/oduAstronomy)
 - [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
 - [1 Science and the Universe: A Brief Tour](Astronomy/01-Science_and_the_Universe_A_Brief_Tour/01-Science_and_the_Universe_A_Brief_Tour.html)
@@ -44,24 +44,27 @@
 - [30 Life in the Universe](Astronomy/30-Life_in_the_Universe/30-Life_in_the_Universe.html)
 
 
-## University Physics
+# University Physics
 - [PHYS232 Intro Slides](University-Physics/00-Course_Intro/PHYS232-Course-Intro.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
 - [23: Electric Potential](University-Physics/23-Electric_Potential/23-Electric_Potential.html)
 - [24: Capacitance](University-Physics/24-Capacitors/24-Capacitors.html)
 - [25: VIR](University-Physics/25-VIR/25-VIR.html)
+- [26: DC Circuits](University-Physics/26-DC-Circuits/26-DC-Circuits.html)
+- [27: Magnetism](University-Physics/27-Magnetism/27-Magnetism.html)
 
-## Door Problems
+
+# Door Problems
 - [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area/Missing-Triangle-Area.html)
 
-## Science Fun Facts
+# Science Fun Facts
 - [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes/Optimal-Boarding-Planes.html)
 - [How Many Games of Chess](SFF/Games-Of-Chess/How-Many-Games-of-Chess.html)
 - [Measure Size of Proton](SFF/Measure-Size-of-Proton/Measure-Size-of-Proton.html)
 - [Resonance](SFF/Resonance/Resonance.html)
 
-## Presentations
+# Presentations
 - [SPS Speed Research (Spring 2022)](/Presentations/SPS-Speed-Research/SPS-Speed-Research.html)
 
 ---
