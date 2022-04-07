@@ -91,88 +91,88 @@
 
                 <!--Course Grade-->
                 <section>
-                    <div class="overl">
-                    <h4>Course Grade</h4>
+                    <h4 class="overl">Course Grade</h4>
+                        <div id=container>
+                                <table>
+                                    <td>
+                                        <!--Sliders table -->
+                                        <font size=5>
+                                            <div class="mathbox">
+                                                <table border="0">
+                                                    <tr>
+                                                        <td style='border:none'>15% Lab:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>15% Participation:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>20% Homework:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>15% Test 1:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>15% Test 2:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>15% Test 3:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style='border:none'>20% Final Exam:</td>
+                                                        <td style='border:none'>
+                                                        <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                Lowest test grade is automatically dropped!
+                                                                    <p>
+                                                <b>Course Grade =  <span id=CourseGrade></span></b>
+                                                                        </p>
+                                            </div>
+                                        </font>
+                                    </td>
+                                    <td>
+                                        <font size="5">
+                                            This is the formula used to calculate your grade.
+                                            <div class="mathbox">
+                                            $$
+                                                \begin{align}
+                                                    \text{Grade}\, = \,& .15*(\text{Lab}) + \, \\
+                                                        & .15*(\text{Participation}) + \, \\
+                                                        & .20*(\text{Homework}) + \, \\
+                                                        & .15*\left(
+                                                            \begin{matrix}
+                                                            \text{SUM}[T1,T2,T3] \\ -\,\text{MIN}[T1,T2,T3]
+                                                            \end{matrix}
+                                                            \right) + \, \\
+                                                        & .20*(\text{Final Exam})
+                                                \end{align}
+                                            $$
+                                            </div>
+                                            
+                                            $\leftarrow$ Tool to help you figure out your grade.
+                                        </font>
+                                    </td>
+                                </table>
                     </div>
-                    <font size=5>
-                        <table>
-                            <td>
-                                <!--Sliders table -->
-                                <div class="mathbox">
-                                    <table border="0">
-                                        <tr>
-                                            <td style='border:none'>15% Lab:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>15% Participation:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>20% Homework:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>15% Test 1:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>15% Test 2:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>15% Test 3:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style='border:none'>20% Final Exam:</td>
-                                            <td style='border:none'>
-                                            <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    The lowest test grade is dropped!
-                                                        <p>
-                                    <b>Course Grade =  <span id=CourseGrade></span></b>
-                                                            </p>
-                                </font>
-                                </div>
-                            </td>
-                            <td>
-                                This is the formula used to calculate your grade.
-                                <div class="mathbox">
-                                $$
-                                    \begin{align}
-                                        \text{Grade}\, = \,& .15*(\text{Lab}) + \, \\
-                                            & .15*(\text{Participation}) + \, \\
-                                            & .20*(\text{Homework}) + \, \\
-                                            & .15*\left(
-                                                \begin{matrix}
-                                                \text{SUM}[T1,T2,T3] \\ -\,\text{MIN}[T1,T2,T3]
-                                                \end{matrix}
-                                                \right) + \, \\
-                                            & .20*(\text{Final Exam})
-                                    \end{align}
-                                $$
-                                </div>
-                                
-                                $\leftarrow$ Tool to help you figure out your grade.
-                            </td>
-                        </table>
-                    </font>
-
                     <!--Script to calculate course grade with sliders                    -->
                     <script>
 

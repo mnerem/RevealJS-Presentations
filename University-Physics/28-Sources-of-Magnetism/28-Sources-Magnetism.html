@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+        <title>Magnetism</title>
+
+        <meta name="description" content="Calc base physics II lectures on Magnetic forces and fields">
+	    <meta name="author" content="Perry Nerem">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../css/custom_v2.css">
+		<link rel="stylesheet" href="../../dist/theme/openstax.css">
+        <link rel="stylesheet" href="../../plugin/chalkboard/style.css">
+        <script src="../../plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css"> 
+        <script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/math/math.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+        <script src="../../plugin/menu/menu.js"></script>
+        <script src="../../plugin/audio-slideshow/plugin.js"></script>
+        <script src="../../plugin/audio-slideshow/RecordRTC.js"></script>
+        <script src="../../plugin/audio-slideshow/recorder.js"></script>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section class="center">
+                    <div class="overl">
+                        <h3>University Physics II</h3>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" 
+					   target='_blank'>
+                        <img src='Electromagnet.gif' width=500px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h3>Magnetism</h3>
+                    </div>
+                </section>
+
+				<section>
+					<h3 class="overl">Earth's Magnetic Field</h3>
+					Earth has a magnetic field that we <br> <em>roughly</em> estimate to be a bar magnet.
+					<br>
+					<a href="https://commons.wikimedia.org/wiki/File:Earth%27s_magnetic_field,_schematic.svg"
+					   target="_blank">
+					   <img src="Earth's_magnetic_field,_schematic.svg" class="r-frame" width="500px">
+					</a>
+					<br>
+					$|\vec{B}_\text{Earth}|=[25,\,65]\mu$T
+				</section>
+
+				<section>
+					<h3 class="overl">Earth's Moving B-field</h3>
+					<div class="twocolumn">
+						<div>
+							<a href="https://websites.pmc.ucsc.edu/~glatz/geodynamo.html"
+							target="_blank">
+							<img src="earth-bfield-reversalanimation.gif" class="r-frame" width="500px">
+							</a>
+						</div>
+						<div>
+							Earth's magnetic field undergoes a reversal anywhere between<br>
+							0.1 and 50 million years.
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="overl">Earth Pole Terminology</h3>
+					<div class="twocolumn">
+						<div>
+							<div class="r-stack">
+								<img src="668px-Geographical_and_Magnetic_Poles-just-geo.png" class="fragment r-frame" data-fragment-index="0" >
+								<img src="668px-Geographical_and_Magnetic_Poles-no-mag-poles.png" class="fragment r-frame" data-fragment-index="1" >
+								<img src="668px-Geographical_and_Magnetic_Poles.png" class="fragment r-frame" data-fragment-index="2" >
+							</div>
+						</div>
+						<div>
+							<ul>
+								<li class="fragment" data-fragment-index="0" >
+									<font color="green">(A) Geographic Poles
+										<br> A1 - North Pole
+										<br> A2 - South Pole
+									</font>
+								</li>
+								<li class="fragment" data-fragment-index="1" >
+									<font color="blue">(B) Geomagnetic Poles
+										<br> B1 - North Pole
+										<br> B2 - South Pole
+									</font>
+								</li>
+								<li class="fragment" data-fragment-index="2" >
+									<font color="magenta">(C) Magnetic Poles
+										<br> C1 - South Pole
+										<br> C2 - North Pole
+									</font>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="overl">Right Hand Rules</h3>
+					<a href="https://en.wikipedia.org/wiki/File:Right_hand_rule_cross_product.svg" target="_blank">
+						<img src="Right_hand_rule_cross_product.svg" class="r-frame">
+					</a>
+				</section>
+
+				<section>
+					<section>
+						<h3 class="overl">PQ: Proton RHR</h3>
+						<p>
+							In each case shown below, the magnetic field strength is <br> $|\vec{B}|$ = 9.7 T 
+							and a proton is moving at $v=3.35\times10^5$m/s. <br>
+							What is the direction and magnitude of the magnetic force on the charge?
+						</p>
+						<img src="RHR-examples.svg" width="800px">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Proton RHR (sol)</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3 class="overl">PQ: Velocity Selector</h3>
+						<p>
+							<font size="5">
+								Charge $Q=18$nC is fired into a region with a 
+								uniform magnetic field $|\vec{B}|=0.63$T out of the page
+								and a uniform electric field $|\vec{E}|=9.30\times10^6$V/m 
+								pointing in the upward direction.
+
+								<ul>
+									<li>What is the magnitude of the electric force on the charge?</li>
+									<li>How fast must the charge move such that magnetic force is equal to the electric force?</li>
+								</ul>
+							</font>
+						</p>
+						<img src="Magnetism-Velocity-Selector-Unknown-E-B-Out.svg" width="500px">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Velocity Selector (sol)</h3>
+					</section>
+				</section>
+			</div>
+		</div>
+
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                mouseWheel: true,
+                slideNumber: 'c/t',
+                //autoSlide: 5000,
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: false,
+
+                preloadIframes: true,
+
+                audio: {
+					prefix: 'chalkboard/',
+					suffix: '.ogg',
+					defaultDuration: 5,
+//					textToSpeechURL: "http://api.voicerss.org/?key=[YOUR_KEY]&hl=en-gb&c=ogg&src=",
+					advance: 500,
+					autoplay: false,
+					defaultText: true,
+					playerOpacity: 0.0,
+				},
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: './',
+				        src: "./kinematics-problem.json",
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+                    markers: true,
+                },
+                                
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                            //RevealAudioSlideshow, 
+                            //RevealAudioRecorder
+                         ]
+			});
+            
+		</script>
+    <!--
+    <a href="https://www.odu.edu/physics" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
+        src="../figures/odu-secondarytm-2color-1.png" width=100px></a>
+    -->
+	</body>
+</html>
