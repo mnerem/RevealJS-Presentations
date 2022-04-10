@@ -53,7 +53,7 @@
 - [25: VIR](University-Physics/25-VIR/25-VIR.html)
 - [26: DC Circuits](University-Physics/26-DC-Circuits/26-DC-Circuits.html)
 - [27: Magnetism](University-Physics/27-Magnetism/27-Magnetism.html)
-- [28: Sources of Magnetism](University-Physics/28-Sources-of-Magnetism/28-Sources-of-Magnetism.html)
+- [28: Sources of Magnetism](University-Physics/28-Sources-of-Magnetism/28-Sources-Magnetism.html)
 - [29: Electromagnetic Induction](University-Physics/29-Electromagnetic-Induction/29-Electromagnetic-Induction.html)
 - [30: Inductance](University-Physics/30-Inductance/30-Inductance.html)
 - [31: Alternating Currents](University-Physics/31-Alternating-Currents/31-Alternating-Currents.html)
