@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 
-        <title>Magnetism</title>
+        <title>28: Sources of Magnetism</title>
 
-        <meta name="description" content="Calc base physics II lectures on Magnetic forces and fields">
+        <meta name="description" content="Calc base physics II lectures on how moving charge creates magnetic fields">
 	    <meta name="author" content="Perry Nerem">
         <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
@@ -40,120 +40,139 @@
                     <div class="overl">
                         <h3>University Physics II</h3>
                     </div>
-                    <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" 
+                    <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/Biosav.html#c1" 
 					   target='_blank'>
-                        <img src='Electromagnet.gif' width=500px class="r-frame">
+                        <img src='bsav3.png' width=700px class="r-frame">
                     </a>
                     <div class="overl">
-                    <h3>Magnetism</h3>
+                    <h3>28: Sources of Magnetism</h3>
                     </div>
                 </section>
 
 				<section>
-					<h3 class="overl">Earth's Magnetic Field</h3>
-					Earth has a magnetic field that we <br> <em>roughly</em> estimate to be a bar magnet.
+					<h3 class="overl">Biot-Savart Law</h3>
+					<div class="r-frame">
+						\begin{equation}
+							d\vec{B}=\frac{\mu_0}{4\pi}Id\vec{\ell}\times\frac{\hat{r}}{r^2}
+						\end{equation}
+					</div>
 					<br>
-					<a href="https://commons.wikimedia.org/wiki/File:Earth%27s_magnetic_field,_schematic.svg"
-					   target="_blank">
-					   <img src="Earth's_magnetic_field,_schematic.svg" class="r-frame" width="500px">
-					</a>
-					<br>
-					$|\vec{B}_\text{Earth}|=[25,\,65]\mu$T
+					$\mu_0$= magnetic permeability = $4\pi\times10^{-7}$Tm/A
+					<br> AKA magnetic constant
+					<br> AKA vacuum permeability
 				</section>
 
 				<section>
-					<h3 class="overl">Earth's Moving B-field</h3>
+					<h3 class="overl">B-Field of a Point Charge</h3>
 					<div class="twocolumn">
 						<div>
-							<a href="https://websites.pmc.ucsc.edu/~glatz/geodynamo.html"
-							target="_blank">
-							<img src="earth-bfield-reversalanimation.gif" class="r-frame" width="500px">
-							</a>
+							<img src="Bfield-of-point-charge.svg" width="500px" class="r-frame">
 						</div>
 						<div>
-							Earth's magnetic field undergoes a reversal anywhere between<br>
-							0.1 and 50 million years.
+							\begin{equation}
+								\vec{B}=
+								\frac{\mu_0}{4\pi}I\vec{v}\times\frac{\hat{r}}{r^2}
+							\end{equation}
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<h3 class="overl">Earth Pole Terminology</h3>
+					<h3 class="overl">B-Field of a Finite length Current</h3>
+					Consider a wire of current $I$ and length $2a$.
 					<div class="twocolumn">
 						<div>
-							<div class="r-stack">
-								<img src="668px-Geographical_and_Magnetic_Poles-just-geo.png" class="fragment r-frame" data-fragment-index="0" >
-								<img src="668px-Geographical_and_Magnetic_Poles-no-mag-poles.png" class="fragment r-frame" data-fragment-index="1" >
-								<img src="668px-Geographical_and_Magnetic_Poles.png" class="fragment r-frame" data-fragment-index="2" >
-							</div>
+							<img src="Bfield-of-finite-length-current.svg" width="500px" class="r-frame">
 						</div>
 						<div>
-							<ul>
-								<li class="fragment" data-fragment-index="0" >
-									<font color="green">(A) Geographic Poles
-										<br> A1 - North Pole
-										<br> A2 - South Pole
-									</font>
-								</li>
-								<li class="fragment" data-fragment-index="1" >
-									<font color="blue">(B) Geomagnetic Poles
-										<br> B1 - North Pole
-										<br> B2 - South Pole
-									</font>
-								</li>
-								<li class="fragment" data-fragment-index="2" >
-									<font color="magenta">(C) Magnetic Poles
-										<br> C1 - South Pole
-										<br> C2 - North Pole
-									</font>
-								</li>
-							</ul>
+							\begin{gather}
+								d\vec{B}=
+								\frac{\mu_0}{4\pi}Id\vec{\ell}\times\frac{\hat{r}}{r^2}
+								\\
+								d\vec{\ell}=dy\,\hat{y}
+								\\
+								\vec{r}=x\,\hat{x}-y\,\hat{y}
+								\\
+								\vdots
+							\end{gather}
+						</div>
+					</div>
+					\begin{equation}
+						|\vec{B}|=\frac{\mu_oI}{4\pi}\frac{2a}{x\sqrt{x^2+a^2}}
+					\end{equation}
+					<br>
+					Can model wire to be $\infty$ long when $x\ll a$.
+				</section>
+
+				<section>
+					<h3 class="overl">B-Field of a Wire of Current</h3>
+					<div class="twocolumn">
+						<div>
+							<img src="Bfield-of-current-wire.svg" width="500px" class="r-frame">
+						</div>
+						<div>
+							\begin{gather}
+								|\vec{B}_\text{wire}|=
+								\frac{\mu_0 I}{2\pi r}
+							\end{gather}
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<h3 class="overl">Right Hand Rules</h3>
-					<a href="https://en.wikipedia.org/wiki/File:Right_hand_rule_cross_product.svg" target="_blank">
-						<img src="Right_hand_rule_cross_product.svg" class="r-frame">
-					</a>
-				</section>
-
-				<section>
 					<section>
-						<h3 class="overl">PQ: Proton RHR</h3>
-						<p>
-							In each case shown below, the magnetic field strength is <br> $|\vec{B}|$ = 9.7 T 
-							and a proton is moving at $v=3.35\times10^5$m/s. <br>
-							What is the direction and magnitude of the magnetic force on the charge?
-						</p>
-						<img src="RHR-examples.svg" width="800px">
-					</section>
-					<section>
-						<h3 class="overl">PQ: Proton RHR (sol)</h3>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h3 class="overl">PQ: Velocity Selector</h3>
+						<h3 class="overl">PQ: // Wires B-field Cancels</h3>
 						<p>
 							<font size="5">
-								Charge $Q=18$nC is fired into a region with a 
-								uniform magnetic field $|\vec{B}|=0.63$T out of the page
-								and a uniform electric field $|\vec{E}|=9.30\times10^6$V/m 
-								pointing in the upward direction.
-
-								<ul>
-									<li>What is the magnitude of the electric force on the charge?</li>
-									<li>How fast must the charge move such that magnetic force is equal to the electric force?</li>
-								</ul>
+								Consider two (infinitely long) parallel current carrying wires separated 
+								by $d=64.0$cm. $I_1=7.43$A, and $I_2=4.17$A.
+								<ol>
+									<li> Draw the B-field of wire 1 </li>
+									<li> Draw the B-field of wire 2 </li>
+									<li> In which region is the $B_\text{net}=0$T?
+										<ul>
+											<li> Above wire 2</li>
+											<li> Bewtween the wires</li>
+											<li> Below wire 1</li>
+										</ul>
+									</li>
+									<li> Find the vertical distance from the $x$-axis where $B_\text{net}=0$T.</li>
+								</ol>
 							</font>
 						</p>
-						<img src="Magnetism-Velocity-Selector-Unknown-E-B-Out.svg" width="500px">
+						<img src="Magnetism-Force-Between-Two-Wires.svg" width="600px" class="r-frame">
 					</section>
 					<section>
-						<h3 class="overl">PQ: Velocity Selector (sol)</h3>
+						<h3 class="overl">PQ: // Wires B-field Cancels (sol)</h3>
+					</section>
+				</section>
+
+				<section>
+					<h3 class="overl">B-field of Current Loop</h3>
+					A loop of current looks <em>exactly</em> like a bar magnet!
+					<img src="loop-magnet.svg" width="500px" class="r-frame">
+				</section>
+
+				<section>
+					<section>
+						<h3 class="overl">PQ: Current Loop Forces</h3>
+						Do these two loops attract or repel each other?
+						<img src="loop-attract-or-repel.svg" width="700px" class="r-frame">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Current Loop Forces (sol)</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3 class="overl">PQ: Work done by B-fields</h3>
+						How much work is done when a <br> magnetic field rotates a proton?
+						<br>
+						<img src="B-rotating-charge.svg" width="600px" class="r-frame">
+					</section>
+					<section>
+						<h3 class="overl">PQ: Work done by B-fields (sol)</h3>
 					</section>
 				</section>
 			</div>
