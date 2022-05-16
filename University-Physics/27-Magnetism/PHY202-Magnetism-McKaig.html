@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 
-        <title>27: Magnetism</title>
+        <title>PHY202 Magnetism (McKaig)</title>
 
-        <meta name="description" content="Calc base physics II lectures on Magnetic forces and fields">
-	    <meta name="author" content="Perry Nerem">
+        <meta name="description" content="Algebra base lecture on Magnetic forces and fields">
+	    <meta name="author" content="Denise McKaig and Perry Nerem ">
         <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
 
@@ -36,25 +36,100 @@
 			<div class="slides">
 
                 <!-- Title Slide-->
-                <section class="center">
-                    <div class="overl">
-                        <h3>University Physics II</h3>
-                    </div>
+                <section class="center" data-audio-text="This is the text sent to the text-to-speech generator">
+					<h1 class="overl">PHY202: Magnetism</h1>
                     <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" 
 					   target='_blank'>
                         <img src='Electromagnet.gif' width=500px class="r-frame">
                     </a>
-                    <div class="overl">
-                    <h3>27: Magnetism</h3>
-                    </div>
-					<aside class="notes">
-						Hello there and welcome to our discussion on magnetism.
-					</aside>
                 </section>
 
 				<section>
+					<h2 class="overl">Demo of Magnet</h2>
+					<iframe src="https://phet.colorado.edu/sims/cheerpj/faraday/latest/faraday.html?simulation=magnet-and-compass"
+						width="800"
+						height="600"
+						allowfullscreen>
+					</iframe>
+				</section>
+
+				<section class="center">
+					<h2 class="overl">Examples of Magnets</h2>
+					<div class="twocolumn">
+						<div>
+							<ul>
+								<li>Bar</li>
+								<li>Horseshoes</li>
+								<li>Spherical</li>
+								<li>Refrigerator Magnets</li>
+							</ul>
+						</div>
+						<div>
+							<a href="https://commons.wikimedia.org/wiki/File:Mafnetic_field.png" target="_blank">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Mafnetic_field.png" width="200px" class="r-frame">
+							</a>
+							<a href="https://commons.wikimedia.org/wiki/File:Horseshoe_magnet_by_Zureks.jpg" target="_blank">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Horseshoe_magnet_by_Zureks.jpg" width="200px" class="r-frame">
+							</a>
+							<br>
+							<a href="https://commons.wikimedia.org/wiki/File:Neo_1170073.jpg" target="_blank">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Neo_1170073.jpg" width="400px" class="r-frame">
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="center">
+					<h2 class="overl">Magnet Properties</h2>
+					Regardless of shape,  <b>ALL</b> magnets have two sides.
+					<a href="https://commons.wikimedia.org/wiki/File:Magnet.svg" target="_blank">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Magnet.svg" width="500px" class="r-frame">
+					</a>
+				</section>
+
+				<section class="center">
+					<h2 class="overl">Participation Question</h2>
+					For each image below, determine if the forces are <br>
+					<b>attractive</b>, <b>repulsive</b>, or <b>no force</b>.
+					<table>
+						<tr>
+							<td>
+								<img src="magnet-attraction-1.svg" class="r-frame">
+							</td>
+							<td>
+								<img src="magnet-attraction-2.svg" class="r-frame">
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<img src="magnet-attraction-3.svg" class="r-frame">
+							</td>
+							<td>
+								<img src="magnet-attraction-4.svg" class="r-frame">
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2 class="overl">Magnetic Field Lines</h2>
+					Magnets create forces on each other through magnetic fields, $\vec{B}$.
+					<br>
+					<img src="http://k2i.co.id/wp-content/uploads/2015/11/Magnetic-pole.gif" width="350px" class="r-frame">
+					<ul>
+						<li>The fields "flow" from N-pole to S-pole.</li>
+						<li>Density of lines $\leftrightarrow$ strength of field (more lines = stronger field)</li>
+						<li>$\vec{B}$ is measured in Teslas (T) or Gauss (G), $\quad$ 1G=$10^{-4}$T</li>
+					</ul>
+				</section>
+
+
+
+				<section>
 					<h3 class="overl">Earth's Magnetic Field</h3>
-					Earth has a magnetic field that we <br> <em>roughly</em> estimate to be a bar magnet.
+					Earth has a magnetic field that we <br> <em>roughly</em> estimate as a bar magnet.
 					<br>
 					<a href="https://commons.wikimedia.org/wiki/File:Earth%27s_magnetic_field,_schematic.svg"
 					   target="_blank">
@@ -85,14 +160,14 @@
 					<div class="twocolumn">
 						<div>
 							<div class="r-stack">
-								<img src="668px-Geographical_and_Magnetic_Poles-just-geo.png" class="fragment r-frame" data-fragment-index="0" >
+								<img src="668px-Geographical_and_Magnetic_Poles-just-geo.png" class="r-frame">
 								<img src="668px-Geographical_and_Magnetic_Poles-no-mag-poles.png" class="fragment r-frame" data-fragment-index="1" >
 								<img src="668px-Geographical_and_Magnetic_Poles.png" class="fragment r-frame" data-fragment-index="2" >
 							</div>
 						</div>
 						<div>
 							<ul>
-								<li class="fragment" data-fragment-index="0" >
+								<li>
 									<font color="green">(A) Geographic Poles
 										<br> A1 - North Pole
 										<br> A2 - South Pole
@@ -116,9 +191,61 @@
 				</section>
 
 				<section>
+					<h4 class="overl">Link between Electric and Magnetic Field</h4>
+					<ul>
+						<li>$\vec{E}$ and $\vec{B}$ fields have a lot of similarities</li>
+						<li>$\vec{B}$: like poles <font color="red">attract</font> and unlike poles <font color="blue">repel</font>
+							<br>
+							$\vec{E}$: like charges <font color="red">attract</font> and unlike charges <font color="blue">repel</font>
+						</li>
+					</ul>
+					<br>
+					<br>
+					Charges can be positive or negative, <br> <b>but</b> magnetic poles can never be separated.
+					<br>
+					<div class="twocolumn">
+						<div>
+							<a href="https://stickmanphysics.com/stickman-physics-home/magnets-and-magnetism/intro-to-magnetism/" target="_blank">
+								<img src="stickmanphysics-Breaking-a-Magnet.gif" width="400px" class="r-frame">
+							</a>
+						</div>
+						<div>
+							<img src="breaking-magnets.svg" width="400px" class="r-frame">
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="overl">Currents and Magnetic Fields</h3>
+					In 1820 Hans Christian Ørsted demonstrated electric currents creating magnetic forces.
+					<br>
+					<a href="https://stickmanphysics.com/stickman-physics-home/magnets-and-magnetism/electromagnetism/" target="_blank">
+						<img src="stickmanphysics-Compass-around-wire-Incoming-Current.gif" class="r-frame">
+					</a>
+				</section>
+
+				<section>
 					<h3 class="overl">Right Hand Rules</h3>
 					<a href="https://en.wikipedia.org/wiki/File:Right_hand_rule_cross_product.svg" target="_blank">
 						<img src="Right_hand_rule_cross_product.svg" class="r-frame">
+					</a>
+				</section>
+
+				<section class="center">
+					<h3 class="overl">Drawing 3D Vectors</h3>
+					<img src="wire-magnetic-field.svg" class="r-frame">
+				</section>
+
+				<section class="center">
+					<h2 class="overl">Magnetic Forces</h2>
+					<div class="mathbox">
+						$B$-force on charge: $F=qvB\sin\theta$
+					</div>
+					<div class="mathbox">
+						$B$-force on wire: $F=I\ell B \sin\theta$
+					</div>
+					<a href="https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor#CNX_UPhysics_28_04_Infwire" target="_blank">
+						<img src="https://openstax.org/apps/archive/20220422.171947/resources/4ce78534643d0df539af4d37c9decfa26720ca34" class="r-frame">
 					</a>
 				</section>
 
@@ -132,8 +259,17 @@
 						</p>
 						<img src="RHR-examples.svg" width="800px">
 					</section>
-					<section>
+					<section class="center">
 						<h3 class="overl">PQ: Proton RHR (sol)</h3>
+						<img src="RHR-examples-sol.svg" width="800px">
+						<br>
+						For (A) and (B) cases, the velocity and magnetic field are $90^\circ$.
+						<div class="mathbox">
+							$|F|=(1.602\times 10^{-19}\text{C})(3.35\times 10^{5}\text{m/s})(9.7\text{T})$
+							<br>
+							$=5.2\times10^{-13}\text{N}$
+						</div>
+						Case (C) $\theta=180^\circ$ and there is no force.
 					</section>
 				</section>
 
@@ -223,8 +359,8 @@
 					prefix: 'audio/',
 					suffix: '.ogg',
 					defaultDuration: 5,
-					defaultNotes: true, 	// use slide notes as default for the text to speech converter
-					textToSpeechURL: "http://api.voicerss.org/?key=[YOUR_KEY]&hl=en-gb&c=ogg&src=",
+					defaultNotes: false, 	// use slide notes as default for the text to speech converter
+					textToSpeechURL: "http://api.voicerss.org/?key=[560caad2e73c4af89b617fe55fe89736]&hl=en-gb&c=ogg&src=",
 					advance: 500,
 					autoplay: false,
 					defaultText: false,
@@ -295,8 +431,8 @@
                             RevealChalkboard,
                             RevealMath,
                             RevealMenu,
-                            RevealAudioSlideshow, 
-                            RevealAudioRecorder
+                            //RevealAudioSlideshow, 
+                            //RevealAudioRecorder
                          ]
 			});
             
