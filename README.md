@@ -75,6 +75,7 @@
 - [SPS Speed Research (Spring 2022)](/Presentations/SPS-Speed-Research/SPS-Speed-Research.html)
 - [Test-Slide](/Presentations/Test-Slides.html)
 - [PHY202 Magnetism Slides](/University-Physics/27-Magnetism/PHY202-Magnetism-McKaig.html)
+- [LN2 Demo Notes](/Presentations/LN2-Demo-Notes.html)
 
 ---
 ## Welcome to GitHub Pages
