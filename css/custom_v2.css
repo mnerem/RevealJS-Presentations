@@ -33,12 +33,12 @@
 }
 
 figcaption {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-style: italic;
-    text-align: left;
+    text-align: center;
     display: inherit;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 table td, table td * {
@@ -71,5 +71,5 @@ table td, table td * {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 10px;
-   text-align: left;
+   text-align: center;
 }
