@@ -64,6 +64,7 @@
 
 # Door Problems
 - [Missing Area From different arragnement](Door-Problems/Missing-Triangle-Area/Missing-Triangle-Area.html)
+- [Hard Geometry Triangle Problem](Door-Problems/Simpsons-Triangle-Drawing/Simpsons-Triangle-Drawing.html)
 
 # Science Fun Facts
 - [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes/Optimal-Boarding-Planes.html)
