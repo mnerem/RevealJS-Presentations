@@ -138,71 +138,33 @@
 
                              
                 <!--Laboratory-->
-                <section data-audio-src="audio/5.0.ogg">
+                <section data-audio-src="audio/async-lab.ogg">
                     <h3 class="overl">Laboratory Sessions</h3>
-                        
-                    <img src="planetarium-lab.jpg" class="r-frame" width=400px>
-                    
                     <ul>
-                        <li>11 labs this semester</li>
-                        <li>You must go to the lab you are register for</li>
+                        <li>6 labs this semester</li>
                         <li>Lab manual provided through Canvas</li>
+                        <li>You will need to install on your computer
+                            <ul>
+                                <li>Microsoft Office</li>
+                                <li>UNL Native App Astronomy Simulations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <br>
+                    <img class="r-frame" src="pretlow-planetarium-constellation.jpeg" width=400px>
+                    <br>
+                    <b>There will be outside night time observations!</b>
+                </section>
+
+                <section data-audio-src="audio/writing-prompt.ogg">
+                    <h3 class="overl">Writing Prompts</h3>
+                    <ul>
+                        <li>Four writing prompts throughout the semester</li>
+                        <li>Each student must write a short response</li>
+                        <li>Then read and comment on a fellow students response</li>
                     </ul>
                 </section>
-                <!--
-                <section>
-                    <section>
-                        <div class="overl">
-                        <h3>Laboratory Sessions</h3>
-                        </div>
-                        
-                        <br>
-                        <a href="#/sync-labs" class="r-frame">Synchronous</a>
-                        <p></p>
-                        <br>
-                        <p>
-                        <a href="#/online-labs" class="r-frame">Asynchronous (online)</a>
-                        </p>
-                    </section>
-                    <section id="sync-labs">
-                        <div class="overl">
-                        <h2>Synchronous Labs</h2>
-                        </div>
-                        
-                        <img src="https://www.pilotonline.com/resizer/dtCu4VbhXkqByJ2IEmf7F6eJOl8=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2TQCPCKBMZCHVEV56DET5IVTBM.jpg" class="r-frame" width=400px>
-                        
-                        <ul>
-                            <li>11 labs this semester</li>
-                            <li>You must go to the lab you are register for</li>
-                            <li>Lab manual provided through Canvas</li>
-                            <li>You will need access to
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                    <section id="online-labs"> <div class="overl"><h2>Online Labs</h2></div>
-                        <ul>
-                            <li>11 labs this semester</li>
-                            <li>Lab manual provided through Canvas</li>
-                            <li>You will need to install on your computer
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
-                            <li>Labs <b>3</b> requires outdoor observations
-                        </ul>
-                        
-                        <br>
-                        <img class="r-frame" src="./figures/00-course-intro/pretlow-planetarium-constellation.jpeg" width=800px>
-                        <br>
-                        <b>There will be outside night time observations!</b>
-                    </section>
-                </section>
-                -->
                                 
                 <!--Reading Notes-->
                 <section data-audio-src="audio/6.0.ogg">
@@ -277,13 +239,19 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>30% Reading:</td>
+                                <td style='border:none'>25% Reading:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="Par_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>25% Homework:</td>
+                                <td style='border:none'>10% Writing Prompts:</td>
+                                <td style='border:none'>
+                                <input type=range min=0 max=100 value=100 step=1 id="WP_Slider"/><span></span><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style='border:none'>20% Homework:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="HW_Slider"/><span></span><br>
                                 </td>
@@ -336,6 +304,7 @@
 
                       var lab_grade = +document.getElementById("Lab_Slider").value;
                       var p_grade = +document.getElementById("Par_Slider").value;
+                      var wp_grade = +document.getElementById("WP_Slider").value;
                       var hw_grade = +document.getElementById("HW_Slider").value;
                       var t1_grade = +document.getElementById("T1_Slider").value;
                       var t2_grade = +document.getElementById("T2_Slider").value;
@@ -343,8 +312,9 @@
                       var fe_grade = +document.getElementById("FE_Slider").value;
 
                       var course_grade = +lab_grade*.15 + 
-                                         +p_grade*.30 + 
-                                         +hw_grade*.25 +
+                                         +p_grade*.25 +
+                                         +wp_grade*.10 +  
+                                         +hw_grade*.20 +
                                          ((t1_grade + t2_grade + t3_grade + fe_grade) -
                                           Math.min(t1_grade,t2_grade,t3_grade, fe_grade))*.10
                                          ;
@@ -357,8 +327,9 @@
                 
                 
                 <!--Calendar iframe-background-->
-                <section id="Synchronous-Calendar" data-background-iframe="https://calendar.google.com/calendar/embed?src=c_aaaq91pmjpi4eb9gjj4hpitu5o%40group.calendar.google.com&ctz=America%2FNew_York"
-                            data-background-interactive data-audio-src="audio/9.0.ogg">
+                <section id="Synchronous-Calendar" 
+                    data-background-iframe="https://calendar.google.com/calendar/embed?src=c_9uca0h4r4i7qsvdj85q0l482hk%40group.calendar.google.com&ctz=America%2FNew_York"
+                    data-background-interactive data-audio-src="audio/9.0.ogg">
                 </section>
 
                 <section data-audio-src="audio/10.0.ogg">

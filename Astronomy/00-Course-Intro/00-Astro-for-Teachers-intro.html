@@ -41,7 +41,7 @@
                 >
                     <!--<a href="https://apod.nasa.gov/apod/ap141031.html" target='_blank' alt="Hello there"> -->
                     <div class="overl">
-                        <h1>Introductory Astronomy</h1>
+                        <h1>Astronomy for Teachers</h1>
                     </div>
                 </section>
 
@@ -137,72 +137,19 @@
                 </section>
 
                              
-                <!--Laboratory-->
-                <section data-audio-src="audio/5.0.ogg">
-                    <h3 class="overl">Laboratory Sessions</h3>
+                <!--Assignment Project-->
+                <section data-audio-src="audio/assignment-projects.ogg">
+                    <h3 class="overl">Assignment Projects</h3>
                         
                     <img src="planetarium-lab.jpg" class="r-frame" width=400px>
                     
-                    <ul>
-                        <li>11 labs this semester</li>
-                        <li>You must go to the lab you are register for</li>
-                        <li>Lab manual provided through Canvas</li>
-                    </ul>
+                    <br>
+                    Two projects throughout the semester
+                    <ol>
+                        <li>Planetarium (on campus or software)</li>
+                        <li>Astronomy Misconceptions and Scientific Process</li>
+                    </ol>
                 </section>
-                <!--
-                <section>
-                    <section>
-                        <div class="overl">
-                        <h3>Laboratory Sessions</h3>
-                        </div>
-                        
-                        <br>
-                        <a href="#/sync-labs" class="r-frame">Synchronous</a>
-                        <p></p>
-                        <br>
-                        <p>
-                        <a href="#/online-labs" class="r-frame">Asynchronous (online)</a>
-                        </p>
-                    </section>
-                    <section id="sync-labs">
-                        <div class="overl">
-                        <h2>Synchronous Labs</h2>
-                        </div>
-                        
-                        <img src="https://www.pilotonline.com/resizer/dtCu4VbhXkqByJ2IEmf7F6eJOl8=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2TQCPCKBMZCHVEV56DET5IVTBM.jpg" class="r-frame" width=400px>
-                        
-                        <ul>
-                            <li>11 labs this semester</li>
-                            <li>You must go to the lab you are register for</li>
-                            <li>Lab manual provided through Canvas</li>
-                            <li>You will need access to
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                    <section id="online-labs"> <div class="overl"><h2>Online Labs</h2></div>
-                        <ul>
-                            <li>11 labs this semester</li>
-                            <li>Lab manual provided through Canvas</li>
-                            <li>You will need to install on your computer
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
-                            <li>Labs <b>3</b> requires outdoor observations
-                        </ul>
-                        
-                        <br>
-                        <img class="r-frame" src="./figures/00-course-intro/pretlow-planetarium-constellation.jpeg" width=800px>
-                        <br>
-                        <b>There will be outside night time observations!</b>
-                    </section>
-                </section>
-                -->
                                 
                 <!--Reading Notes-->
                 <section data-audio-src="audio/6.0.ogg">
@@ -271,43 +218,43 @@
                     <!--Sliders table -->
                         <table border="0">
                             <tr>
-                                <td style='border:none'>15% Lab:</td>
+                                <td style='border:none'>20% Assignment Projects:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="Lab_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>30% Reading:</td>
+                                <td style='border:none'>20% Reading:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="Par_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>25% Homework:</td>
+                                <td style='border:none'>15% Homework:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="HW_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>10% Test 1:</td>
+                                <td style='border:none'>15% Test 1:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="T1_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>10% Test 2:</td>
+                                <td style='border:none'>15% Test 2:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="T2_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>10% Test 3:</td>
+                                <td style='border:none'>15% Test 3:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="T3_Slider"/><span></span><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td style='border:none'>10% Final Exam:</td>
+                                <td style='border:none'>15% Final Exam:</td>
                                 <td style='border:none'>
                                 <input type=range min=0 max=100 value=100 step=1 id="FE_Slider"/><span></span><br>
                                 </td>
@@ -342,11 +289,11 @@
                       var t3_grade = +document.getElementById("T3_Slider").value;
                       var fe_grade = +document.getElementById("FE_Slider").value;
 
-                      var course_grade = +lab_grade*.15 + 
-                                         +p_grade*.30 + 
-                                         +hw_grade*.25 +
+                      var course_grade = +lab_grade*.20 + 
+                                         +p_grade*.20 + 
+                                         +hw_grade*.15 +
                                          ((t1_grade + t2_grade + t3_grade + fe_grade) -
-                                          Math.min(t1_grade,t2_grade,t3_grade, fe_grade))*.10
+                                          Math.min(t1_grade,t2_grade,t3_grade, fe_grade))*.15
                                          ;
 
                       CourseGrade.textContent = course_grade.toFixed(2);
@@ -357,7 +304,8 @@
                 
                 
                 <!--Calendar iframe-background-->
-                <section id="Synchronous-Calendar" data-background-iframe="https://calendar.google.com/calendar/embed?src=c_aaaq91pmjpi4eb9gjj4hpitu5o%40group.calendar.google.com&ctz=America%2FNew_York"
+                <section id="Synchronous-Calendar" 
+                    data-background-iframe="https://calendar.google.com/calendar/embed?src=c_a8o4te30gi8lvthv9omc7ljln4%40group.calendar.google.com&ctz=America%2FNew_York"
                             data-background-interactive data-audio-src="audio/9.0.ogg">
                 </section>
 
