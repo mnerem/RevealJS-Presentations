@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+        <title>01: Science and the Universe A Brief Tour</title>
+
+        <meta name="description" content="CONTENT_DESCIPTION">
+	    <meta name="author" content="Perry Nerem">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../css/custom_v2.css">
+		<link rel="stylesheet" href="../../dist/theme/openstax.css">
+        <link rel="stylesheet" href="../../plugin/chalkboard/style.css">
+        <script src="../../plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css"> 
+        <script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/math/math.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+        <script src="../../plugin/menu/menu.js"></script>
+        <script src="../../plugin/audio-slideshow/plugin.js"></script>
+        <script src="../../plugin/audio-slideshow/RecordRTC.js"></script>
+        <script src="../../plugin/audio-slideshow/recorder.js"></script>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <!--Math review-->
+                <section>
+                    <div class='overl'><h3>Math Overview</h3></div>
+                </section>
+                
+                <!--Scientific Notation (grams in pencil-->
+                <section>
+                    <div class='overl'><h2>Scientific Notation</h2></div>
+                    Mass of an object that contains
+                    <b>three hundred-thousand-billion-billion atoms of carbon</b>
+                    given that one carbon atom has a mass of
+                    <b>twenty billion-billion-billionths of a kilogram</b>?
+                    
+                    <p class="fragment">
+                        $$
+                            \begin{align*}
+                                M&=N_\text{atoms}\times m_\text{C} \\
+                                &=300,000,000,000,000,000,000,000 \times \\
+                                & \qquad 0.000,000,000,000,000,000,000,000,02\,\text{kg} \\
+                                &=\big(3E23\big)\big(2E-26\big)\text{kg}\\
+                                &=\big(3\times 2\big)\big(10^{23}\times10^{-26}\big)\,\text{kg}\\
+                                &=6\times10^{23-26}\,\text{kg} \\
+                                &=6E-3\,\text{kg} \\
+                                &=6\,\text{grams}
+                            \end{align*}
+                        $$
+                        Scientific notation gives us a way to easily communicate the “size” of a number.
+                    </p>
+                    
+                </section>
+
+                <!--Scientific Notation practice-->
+                <section>
+                    <div class="overl"><h2>Scientific Notation: More Examples</h2></div>
+                    <br>
+                    <iframe src="https://janus.astro.umd.edu/astro/scinote/" width=1920px height=600px class="r-frame"></iframe>
+                    <br>
+                    <font size="4">
+                        Scientific Notation written by Dr. Douglas P. Hamilton and Mike Asbury in February 1997.
+                        Revised by Curran Muhlberger and Dr. Douglas P. Hamilton in December 2007.
+                    </font>
+                </section>
+                
+                <!--Scientific Notation hard example-->
+                <section>
+                    <h2 class="overl">Scientific Notation: You try</h2>
+                    Question: Simplify $\dfrac{8\times10^{1024}}{4\times10^{1020}}\times0.5\times10^{-3}$
+                    <p class="fragment">
+                        <br>
+                            \begin{align}
+                                &=\frac{8}{4}10^{1024-1020}\times\frac{1}{2}10^{-3} \\
+                                &=\frac{8}{4\times2}10^4\times10^{-3}\\
+                                &=\frac{8}{8}10^{4-3}\\
+                                &=1\times10^1\\
+                                &=10
+                            \end{align}
+                    </p>
+                </section>
+                
+                <!--Proportionality-->
+                <section>
+                    <h2 class="overl">Proportionality</h2>
+                    Distance travel is proportional to the time you were traveling
+                    <br>
+                    <ul>
+                        <li>Traveling at 60 mph for one hour you’ll cover 60 miles</li>
+                        <li>Traveling at 60 mph for two hours you’ll cover 120 miles</li>
+                    </ul>
+                    <br>
+                    $$d\propto t$$
+                    
+                    <div class="fragment">
+                        Time to travel a distance is inversely proportional to speed
+                        <br>
+                        <ul>
+                            <li>Traveling 20 miles at 30 mph takes 40 minutes</li>
+                            <li>Traveling 20 miles at 60 mph takes 20 minutes</li>
+                        </ul>
+                        $$t\propto \dfrac{1}{v}$$
+                    </div>
+                </section>
+                
+                <!--Circle Geometry-->
+                <section>
+                    <h2 class="overl">Geometry</h2>
+                    <img src="./figures/00-course-intro/sphere-geometry.svg" height=900px>
+                </section>
+                
+                <!--Trigonometry-->
+                <section>
+                    <h2 class="overl">Trigonometry</h2>
+                    <b>The math of right triangles!</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <br>
+                                <img src="./figures/00-course-intro/Right-Triangle-1.png" width=500px>
+                            </td>
+                            <td>
+                                \begin{gather*}
+                                    \text{SOH-CAH-TOA} \\
+                                    \sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}=\frac{b}{c} \\
+                                    \cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}=\frac{a}{c} \\
+                                    \tan\theta=\frac{\text{opposite}}{\text{adjacent}}=\frac{b}{a}
+                                \end{gather*}
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Pythagoras’ Theorem: $a^2 + b^2 = c^2$
+                </section>
+                
+                <!--Log-->
+                <section>
+                    <h2 class="overl">Logarithms</h2>
+                    Logarithm is the inverse of exponentiation
+                    (just as division is the inverse of multiplication)
+                    \begin{equation}
+                        4^x=10 \quad \Rightarrow \quad \log_4(4^x)=\log_4(10)
+                        \quad \Rightarrow \quad
+                        x=\log_4(10)
+                    \end{equation}
+                    Invented by astronomers to make their lives easier.
+                    <br>
+                    
+                    <table>
+                        <tr>
+                            <td width=500px>
+                                Simplify difficult large number calculations and 
+                                reduce wide ranging quantities <br> (log scales)
+                                \begin{align}
+                                    \text{multiplication hard} & \\
+                                    \log(278\cdot316) = & \log(278)+\log(316) \\
+                                    & \text{addition easy}
+                                \end{align}
+                            </td>
+                            <td>
+                                <img class="r-frame" src="./figures/00-course-intro/log-plot.svg" width=1000px>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <section>
+                    <h3 class="overl">Final Thoughts</h3>
+                    <table>
+                        <tr>
+                            <td width=600px>
+                                <ul>
+                                    <li>Read the book</li>
+                                    <li>Practice problems</li>
+                                    <li>Don’t be afraid of math</li>
+                                    <li><b>Study the concepts</b></li>
+                                    <li><b>READ THE BOOK!</b></li>
+                                    <li>Volunteer note-sharing</li>
+                                    <li>Honors astro students talk to instructor after lecture</li>
+                                    <li>Always ask questions!</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://apod.nasa.gov/apod/ap100224.html" target="_blank">
+                                    <img class="r-frame" src="./figures/00-course-intro/installingcupola_nasa_big.jpg" width=450px>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+			</div>
+		</div>
+
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                mouseWheel: true,
+                slideNumber: 'c/t',
+                //autoSlide: 5000,
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: true,
+
+                preloadIframes: true,
+
+                audio: {
+					prefix: 'chalkboard/',
+					suffix: '.ogg',
+					defaultDuration: 5,
+//					textToSpeechURL: "http://api.voicerss.org/?key=[YOUR_KEY]&hl=en-gb&c=ogg&src=",
+					advance: 500,
+					autoplay: false,
+					defaultText: true,
+					playerOpacity: 0.2,
+				},
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: './',
+				        src: "./kinematics-problem.json",
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'wide',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+                    markers: true,
+                },
+                                
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                            RevealAudioSlideshow, 
+                            RevealAudioRecorder
+                         ]
+			});
+            
+		</script>
+    <!--
+    <a href="https://www.odu.edu/physics" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
+        src="../figures/odu-secondarytm-2color-1.png" width=100px></a>
+    -->
+	</body>
+</html>

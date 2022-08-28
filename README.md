@@ -11,7 +11,8 @@
 
 # Astronomy
 [Google Sites page hosting astronomy slides](https://sites.google.com/odu.edu/oduAstronomy)
-- [Astro Introductory Slides](Astronomy/Astro-Course-Intro.html)
+- [Astro Introductory Slides (synchronous)](Astronomy/00-Course-Intro/00-Astro-Course-Intro-synchronous.html)
+- [Astro Math Overview](Astronomy/00-Course-Intro/00-Math-Overview.html)
 - [1 Science and the Universe: A Brief Tour](Astronomy/01-Science_and_the_Universe_A_Brief_Tour/01-Science_and_the_Universe_A_Brief_Tour.html)
 - [2 Observing the Sky: The Birth of Astronomy](Astronomy/02-Observing_the_Sky_The_Birth_of_Astronomy/02-Observing_the_Sky_The_Birth_of_Astronomy.html)
 - [3 Orbits and Gravity](Astronomy/03-Orbits_and_Gravity/03-Orbits_and_Gravity.html)
