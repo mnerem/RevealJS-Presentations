@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 
-        <title>PHYS 232 Course (Spring 2022)</title>
+        <title>PHYS 231 Course (Fall 2022)</title>
 
-        <meta name="description" content="Introductory Slides for ODU PHYS232 Course">
+        <meta name="description" content="Introductory Slides for ODU PHYS231 Course">
 	    <meta name="author" content="Perry Nerem">
         <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
@@ -37,11 +37,8 @@
 			<div class="slides">
                 <!-- Title Slide-->
                 <section>
-                    <h3 class="overl">University Physics II</h3>
-                    <a href="https://en.wikipedia.org/wiki/Electrostatic_induction#/media/File:Electrostatic_induction.svg" target='_blank' alt="Hello there">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=800px class="r-frame">
-                    </a>
-                    <h5 class="overl">Old Dominion University: PHYS 232N</h5>
+                    <h3 class="overl">University Physics I</h3>
+                    <img src='phys231-title-slide.svg' width=800px class="r-frame">
                 </section>
 
                 <!-- Professor Information-->
@@ -71,7 +68,7 @@
                                       </tr>
                                       <tr>
                                           <td class="tg-km2t"><b>Office Hours</b>:</td>
-                                        <td class="tg-zv4m">TR 1pm-2pm</td>
+                                        <td class="tg-zv4m">TR 3pm-4pm</td>
                                       </tr>
                                     </tbody>
                                 </table>
@@ -86,7 +83,7 @@
                 </div>
                     
                     Instructor's Toplogical Optics Research
-                    <img class="r-frame" src=About-Nerem-Research.svg width=800px>
+                    <img class="r-frame" src=About-Nerem-Research.svg width=600px>
                 </section>
 
                 <!--Course Grade-->
@@ -96,7 +93,7 @@
                                 <table>
                                     <td>
                                         <!--Sliders table -->
-                                        <font size=5>
+                                        <font size=6>
                                             <div class="mathbox">
                                                 <table border="0">
                                                     <tr>
@@ -106,13 +103,13 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>20% Journal:</td>
+                                                        <td style='border:none'>15% Journal:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="Par_Slider"/><span></span><br>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>15% Homework:</td>
+                                                        <td style='border:none'>15% Mastering Physics:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="HW_Slider"/><span></span><br>
                                                         </td>
@@ -130,22 +127,16 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>15% Test 3:</td>
-                                                        <td style='border:none'>
-                                                        <input type=range min=0 max=100 value=100 step=1 id="T3_Slider"/><span></span><br>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style='border:none'>20% Final Exam:</td>
+                                                        <td style='border:none'>25% Final Exam:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="FE_Slider"/><span></span><br>
                                                         </td>
                                                     </tr>
                                                 </table>
                                                 Lowest test grade is automatically dropped!
-                                                                    <p>
+                                                <div>
                                                 <b>Course Grade =  <span id=CourseGrade></span></b>
-                                                                        </p>
+                                                </div>
                                             </div>
                                         </font>
                                     </td>
@@ -171,15 +162,14 @@
                       var hw_grade = +document.getElementById("HW_Slider").value;
                       var t1_grade = +document.getElementById("T1_Slider").value;
                       var t2_grade = +document.getElementById("T2_Slider").value;
-                      var t3_grade = +document.getElementById("T3_Slider").value;
                       var fe_grade = +document.getElementById("FE_Slider").value;
 
                       var course_grade = +lab_grade*.15 + 
-                                         +p_grade*.20 + 
+                                         +p_grade*.15 + 
                                          +hw_grade*.15 +
-                                         ((t1_grade + t2_grade + t3_grade) -
-                                          Math.min(t1_grade,t2_grade,t3_grade))*.15 +
-                                         +fe_grade*.20
+                                         ((t1_grade + t2_grade + fe_grade) -
+                                          Math.min(t1_grade,t2_grade,fe_grade))*.15 +
+                                         +fe_grade*.25
                                          ;
 
                       CourseGrade.textContent = course_grade.toFixed(2);
@@ -194,7 +184,7 @@
                     University Physics Edition 15 by Young and Freedman.
                     <br>
                     <a href="https://www.pearson.com/us/higher-education/program/Young-Modified-Mastering-Physics-with-Pearson-e-Text-Standalone-Access-Card-for-University-Physics-with-Modern-Physics-15th-Edition/PGM2485469.html" target="_blank">
-                        <img src="cover.jpg" class="r-frame" width=400px>
+                        <img src="cover.jpg" class="r-frame" width=300px>
                     </a>
                     <br>
                     E-Text access part of Mastering Physics on Blackboard.
@@ -205,7 +195,7 @@
                 <section>
                     <h4 class="overl">Laboratory Sessions</h4>
                         <a href="https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction#/media/File:Faraday_emf_experiment.svg" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Faraday_emf_experiment.svg" class="r-frame" width=800px>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Faraday_emf_experiment.svg" class="r-frame" width=700px>
                         </a>
                         
                     <br>
@@ -224,7 +214,9 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Scan and upload copies of your <br> <b>handwritten</b> notes</li>
+                                    <li>Scan and upload copies of your <br> <b>handwritten</b> notes for the <br>
+                                        <b>Participation Questions (PQs)</b>
+                                    </li>
                                     <li>Notes from tablet devices are acceptable</li>
                                     <li>Upload work though Canvas</li>
                                     <li><b>Files must be PDF documents</b></li>
@@ -242,7 +234,7 @@
                 <section>
                     <div class="overl"><h4>Homework</h4></div>
                     <ul>
-                        <li>Mastering Physics (found through Blackboard)</li>
+                        <li>Mastering Physics (found through Canvas)</li>
                         <li>5% penalty per day late (max penalty of 60%)</li>
                         <li>Last day to submit any assignment is <br> the last day of lecture</li>
                     </ul>
@@ -258,8 +250,10 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Three test and a cumulative final exam.</li>
-                                    <li>Lowest test grade is dropped</li>
+                                    <li>Two test and a cumulative final exam.</li>
+                                    <li>Lowest test grade is replaced with final exam
+                                        (if final is a higher score)
+                                    </li>
                                     <li>No late test will be offered</li>
                                 </ul>
                             </td>
@@ -273,7 +267,7 @@
                 </section>
                 
                 <!--Calendar iframe-background-->
-                <section data-background-iframe="https://calendar.google.com/calendar/embed?src=c_dueio48jni4eha12s1qa45f6c4%40group.calendar.google.com&ctz=America%2FNew_York"
+                <section data-background-iframe="https://calendar.google.com/calendar/embed?src=c_gelkhl0f4p30jqa9edatdcl72g%40group.calendar.google.com&ctz=America%2FNew_York"
                          data-background-interactive>
                     
                 </section>
@@ -474,27 +468,7 @@
                     </font>
                 </section>
                 
-                <section>
-                    <section>
-                        <h4 class="overl">PQ: Kinematics Interception</h4>
-                        <p>
-                            Bruce is jogging at pace of 2.5 m/s and passes Tony who is sitting on a park bench. 
-                            When Bruce is 3 m ahead, Tony gets up and tries to catch up to Bruce. 
-                            Tony runs with a constant acceleration of 1 m/s$^2$. At what time
-                            will Tony catch up to Bruce? The following are the standard kinematic equations.
-
-                            \begin{gather}
-                                x_f=x_i+v_0t+\tfrac{1}{2}at^2 \\
-                                v_f=v_i+at \\
-                                v_f^2=v_i^2+2a\Delta x
-                            \end{gather}
-                        </p>
-                    </section>
-                    <section data-audio-src="19.1.ogg">
-                        <h4 class="overl">PQ: Kinematics Interception (Solution)</h4>
-                    </section>
-                </section>
-
+                
                 <section>
                     <section>
                         <h4 class="overl">PQ: Practice Units</h4>
@@ -502,16 +476,11 @@
                             Acetaminophen (a fever-reducer) should have a maximum dose of 20 mg/kg 
                             (meaning: 20 mg of acetaminophen per kilogram of child). 
                             Acetaminophen for children is supplied as a solution at concentration of 160mg/5mL.
-
-                            <ul>
-                                <li>
-                                    What is the maximum amount (in mg) of acetaminophen a 12 kg child should receive?
-                                </li>
-                                <li>
-                                    What is the maximum volume of solution in (mL) that child can receive ?
-                                </li>
-                            </ul>
                         </p>
+                        <ola>
+                            <li>What is the maximum amount (in mg) of <br> acetaminophen a 12 kg child should receive?</li>
+                            <li>What is the maximum volume of solution <br> in (mL) that child can receive ?</li>
+                        </ola>
                     </section>
                     <section>
                         <h4 class="overl">PQ: Practice Units (Solution)</h4>
@@ -530,11 +499,11 @@
                                 <br>
                                 <img src="Vector-Math-1.png" width=400px>
                                 <br>
-                                <ol>
+                                <ola>
                                     <li>Draw the vector addition of $\vec{A}$ and $\vec{B}$.</li>
                                     <li>Find the x and y components of $\vec{A}$ and $\vec{B}$.</li>
                                     <li>Find $\vec{C}$ such that $\vec{A}+\vec{B}+\vec{C}=\vec{0}$</li>
-                                </ol>
+                                </ola>
 
                         </font>
                     </section>
@@ -589,7 +558,7 @@
                 transition: 'convex', // none/fade/slide/convex/concave/zoom
                 
                 // Vertical centering of slides
-                center: false,
+                center: true,
 
                 preloadIframes: true,
 

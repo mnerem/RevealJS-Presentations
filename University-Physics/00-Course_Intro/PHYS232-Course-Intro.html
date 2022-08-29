@@ -39,7 +39,7 @@
                 <section>
                     <h3 class="overl">University Physics II</h3>
                     <a href="https://en.wikipedia.org/wiki/Electrostatic_induction#/media/File:Electrostatic_induction.svg" target='_blank' alt="Hello there">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=800px class="r-frame">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=600px class="r-frame">
                     </a>
                     <h5 class="overl">Old Dominion University: PHYS 232N</h5>
                 </section>
@@ -71,7 +71,7 @@
                                       </tr>
                                       <tr>
                                           <td class="tg-km2t"><b>Office Hours</b>:</td>
-                                        <td class="tg-zv4m">TR 1pm-2pm</td>
+                                        <td class="tg-zv4m">TR 3pm-4pm</td>
                                       </tr>
                                     </tbody>
                                 </table>
@@ -86,7 +86,7 @@
                 </div>
                     
                     Instructor's Toplogical Optics Research
-                    <img class="r-frame" src=About-Nerem-Research.svg width=800px>
+                    <img class="r-frame" src=About-Nerem-Research.svg width=700px>
                 </section>
 
                 <!--Course Grade-->
@@ -106,13 +106,13 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>20% Journal:</td>
+                                                        <td style='border:none'>15% Journal:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="Par_Slider"/><span></span><br>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>15% Homework:</td>
+                                                        <td style='border:none'>15% Mastering Physics:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="HW_Slider"/><span></span><br>
                                                         </td>
@@ -130,22 +130,16 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style='border:none'>15% Test 3:</td>
-                                                        <td style='border:none'>
-                                                        <input type=range min=0 max=100 value=100 step=1 id="T3_Slider"/><span></span><br>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style='border:none'>20% Final Exam:</td>
+                                                        <td style='border:none'>25% Final Exam:</td>
                                                         <td style='border:none'>
                                                         <input type=range min=0 max=100 value=100 step=1 id="FE_Slider"/><span></span><br>
                                                         </td>
                                                     </tr>
                                                 </table>
                                                 Lowest test grade is automatically dropped!
-                                                                    <p>
+                                                <div>
                                                 <b>Course Grade =  <span id=CourseGrade></span></b>
-                                                                        </p>
+                                                </div>
                                             </div>
                                         </font>
                                     </td>
@@ -171,15 +165,14 @@
                       var hw_grade = +document.getElementById("HW_Slider").value;
                       var t1_grade = +document.getElementById("T1_Slider").value;
                       var t2_grade = +document.getElementById("T2_Slider").value;
-                      var t3_grade = +document.getElementById("T3_Slider").value;
                       var fe_grade = +document.getElementById("FE_Slider").value;
 
                       var course_grade = +lab_grade*.15 + 
-                                         +p_grade*.20 + 
+                                         +p_grade*.15 + 
                                          +hw_grade*.15 +
-                                         ((t1_grade + t2_grade + t3_grade) -
-                                          Math.min(t1_grade,t2_grade,t3_grade))*.15 +
-                                         +fe_grade*.20
+                                         ((t1_grade + t2_grade + fe_grade) -
+                                          Math.min(t1_grade,t2_grade,fe_grade))*.15 +
+                                         +fe_grade*.25
                                          ;
 
                       CourseGrade.textContent = course_grade.toFixed(2);
@@ -194,7 +187,7 @@
                     University Physics Edition 15 by Young and Freedman.
                     <br>
                     <a href="https://www.pearson.com/us/higher-education/program/Young-Modified-Mastering-Physics-with-Pearson-e-Text-Standalone-Access-Card-for-University-Physics-with-Modern-Physics-15th-Edition/PGM2485469.html" target="_blank">
-                        <img src="cover.jpg" class="r-frame" width=400px>
+                        <img src="cover.jpg" class="r-frame" width=300px>
                     </a>
                     <br>
                     E-Text access part of Mastering Physics on Blackboard.
@@ -224,7 +217,8 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Scan and upload copies of your <br> <b>handwritten</b> notes</li>
+                                    <li>Scan and upload copies of your <b>handwritten</b> notes</li> for the
+                                    <b>Participation Questions (PQs)</b>
                                     <li>Notes from tablet devices are acceptable</li>
                                     <li>Upload work though Canvas</li>
                                     <li><b>Files must be PDF documents</b></li>
@@ -242,7 +236,7 @@
                 <section>
                     <div class="overl"><h4>Homework</h4></div>
                     <ul>
-                        <li>Mastering Physics (found through Blackboard)</li>
+                        <li>Mastering Physics (found through Canvas)</li>
                         <li>5% penalty per day late (max penalty of 60%)</li>
                         <li>Last day to submit any assignment is <br> the last day of lecture</li>
                     </ul>
@@ -253,13 +247,14 @@
                 
                 <!--Test-->
                 <section class="center">
-                    <div class="overl"><h2>Test</h2></div>
+                    <div class="overl"><h3>Test</h3></div>
                     <table>
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Three test and a cumulative final exam.</li>
-                                    <li>Lowest test grade is dropped</li>
+                                    <li>Two test and a cumulative final exam.</li>
+                                    <li>Lowest test grade is replaced with final exam
+                                        (if final is a higher score)</li>
                                     <li>No late test will be offered</li>
                                 </ul>
                             </td>
@@ -589,7 +584,7 @@
                 transition: 'convex', // none/fade/slide/convex/concave/zoom
                 
                 // Vertical centering of slides
-                center: false,
+                center: true,
 
                 preloadIframes: true,
 
