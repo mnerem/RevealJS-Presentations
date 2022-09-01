@@ -50,6 +50,9 @@
 # University Physics
 - [PHYS231 Intro Slides](University-Physics/00-Course_Intro/PHYS231-Course-Intro.html)
 - [PHYS232 Intro Slides](University-Physics/00-Course_Intro/PHYS232-Course-Intro.html)
+- [1: Units and Vectors](University-Physics/01-Units-and-Vectors/01-Units-and-Vectors.html)
+- [2: 1D Motion](University-Physics/02-1D-Motion/02-1D-Motion.html)
+- [3: 2D and 3D Motion](University-Physics/03-2D-and-3D-Motion/03-2D-and-3D-Motion.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
 - [23: Electric Potential](University-Physics/23-Electric_Potential/23-Electric_Potential.html)
