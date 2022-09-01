@@ -157,7 +157,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal ola {
-  list-style-type: lower-alpha;
+  list-style-type: upper-alpha;
 }
 
 .reveal ul {
