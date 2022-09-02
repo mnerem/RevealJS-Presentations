@@ -153,7 +153,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal ol {
-  list-style-type: decimal;
+  list-style-type: upper-alpha;
 }
 
 .reveal ola {
