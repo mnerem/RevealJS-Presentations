@@ -54,6 +54,7 @@
 - [2: 1D Motion](University-Physics/02-1D-Motion/02-1D-Motion.html)
 - [3: 2D and 3D Motion](University-Physics/03-2D-and-3D-Motion/03-2D-and-3D-Motion.html)
 - [4: Forces](University-Physics/04-Forces/04-Forces.html)
+- [5: Applying Newton's Laws](University-Physics/05-Applying-Newtons-Laws/05-Applying-Newtons-Laws.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
 - [23: Electric Potential](University-Physics/23-Electric_Potential/23-Electric_Potential.html)
