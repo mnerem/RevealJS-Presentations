@@ -56,6 +56,7 @@
 - [4: Forces](University-Physics/04-Forces/04-Forces.html)
 - [5: Applying Newton's Laws](University-Physics/05-Applying-Newtons-Laws/05-Applying-Newtons-Laws.html)
 - [6: Work and Energy](University-Physics/06-Work-Kinetic-Energy/06-Work-Kinetic-Energy.html)
+- [7: Energy Conservation](University-Physics/07-Energy-Conservation/07-Energy-Conservation.html)
 - [11: Equilibrium](University-Physics/11-Equilibrium/11-Equilibrium.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
