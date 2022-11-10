@@ -91,6 +91,7 @@
 - [Test-Slide](/Presentations/Test-Slides.html)
 - [PHY202 Magnetism Slides](/University-Physics/27-Magnetism/PHY202-Magnetism-McKaig.html)
 - [LN2 Demo Notes](/Presentations/LN2-Demo-Notes.html)
+- [BEC PHYS 120 Lecture](https://docs.google.com/presentation/d/1uAHpFTHzfiaZ4_iuiAwseXQalJWVnz8AdohLCEQQLbw/edit?usp=sharing)
 
 # Other Work
 - [Physics Algebra/Trig Review](/Physics-Trig-Review/intro.html)
