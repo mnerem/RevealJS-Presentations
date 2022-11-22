@@ -54,6 +54,26 @@
                     <img src="what-is-a-radian.gif" class="r-frame">
                 </section>
 
+                <section>
+                    <section>
+                        <h3 class="overl">PQ: Disk Rotating Kinematics</h3>
+                        <p>
+                        A Blu-ray disk is spinning at $\omega=27.5$rad/s. When you go to eject the disk
+                        it slows down at a constant rate of $\alpha=-10.0$rad/s$^2$ to bring it to a stop.
+                        How many times has the disk rotated when it finally stops spinning?
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="overl">PQ: Disk Rotating Kinematics (sol)</h3>
+                        $$ \omega_f^2=\omega_i^2+2\alpha \Delta\phi $$
+                        $$ 0=\omega_i^2+2\alpha \Delta\phi \quad \Rightarrow \quad
+                           \Delta\phi = \frac{-\omega_i^2}{2\alpha}$$
+                        $$ \Delta\phi = \frac{-(27.5\text{rad/s})^2}{2(-10.0\text{rad/s})}
+                            = +37.8\text{rad} $$
+                        $$  = +37.8\text{rad} \frac{1\text{rev}}{2\pi\text{rad}}= 6.02\text{rev}
+                        $$
+                    </section>
+                </section>
                 
                 <section>
                     <section>
@@ -70,6 +90,55 @@
                     <section>
                         <h3 class="overl">PQ: Spinning Bobbin (sol)</h3>   
                         <img src="pq-spinning-ribbon-sol.png" width=800px class="r-frame">
+                    </section>
+                </section>
+
+
+                
+                <section>
+                    <section>
+                        <h3 class="overl">PQ: $\vec{r}\cdot\vec{v}$</h3>
+                        <p>
+                        Use the vector dot product to show in circular motion
+                        $\vec{r}$ and $\vec{v}$ are always orthogonal.
+                        </p>
+                        $$ \vec{r}=r\cos\phi\,\hat{x}+r\sin\phi\,\hat{y} $$
+                        $$ \vec{v}=-r\omega\sin\phi\,\hat{x}+r\omega\cos\phi\,\hat{y} $$
+                    </section>
+                    <section>
+                        <h3 class="overl">PQ: $\vec{r}\cdot\vec{v}$ (sol)</h3>
+                        $$ \vec{r}\cdot\vec{v}=(r\cos\phi\,\hat{x}+r\sin\phi\,\hat{y}) 
+                            \cdot
+                            (-r\omega\sin\phi\,\hat{x}+r\omega\cos\phi\,\hat{y} )
+                        $$
+                        $$=
+                            -r^2\omega\cos\phi\sin\phi+
+                             r^2\omega\sin\phi\cos\phi
+                        $$
+                        $$ = 0 $$
+                        A dot product is always zero only if the angle between the two
+                        vectors is $90^\circ$.
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3 class="overl">PQ: Calculate I Point Masses</h3>
+                        <p>
+                        Consider two point particles, $m_1$=3kg at $x=$0cm
+                        and $m_2$=5kg at $x=$10cm.
+                        What is the moment of the inertia for the system when $\ldots$
+
+                        <ol>
+                            <li>rotating about an axis through the center of mass?</li>
+                            <li>rotating about an axis through the origin?</li>
+                        </ol>
+                        </p>
+                        <img src="particle-I-calculations.svg" width=800px class="r-frame">
+                    </section>
+                    <section>
+                        <h3 class="overl">PQ: Calculate I Point Masses (sol)</h3>
+                        <img src="PQ-particle-I-sol.png" width=900px class="r-frame">
                     </section>
                 </section>
 
@@ -155,11 +224,12 @@
 		        },
 
                 menu: {
-                    width: 'normal',
-                    numbers: false,
+                    width: 'wide',
+                    numbers: 'c',
                     themes: false,
                     transitions: false,
                     markers: true,
+                    openSlideNumber: true,
                 },
                                 
 				// Learn about plugins: https://revealjs.com/plugins/
