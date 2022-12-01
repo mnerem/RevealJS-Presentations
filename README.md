@@ -59,6 +59,7 @@
 - [7: Energy Conservation](University-Physics/07-Energy-Conservation/07-Energy-Conservation.html)
 - [8: Momentum](University-Physics/08-Momentum/08-Momentum.html)
 - [9: Rigid Body Rotation](University-Physics/09-Rigid-Body-Rotation/09-Rigid-Body-Rotation.html)
+- [10: Rotational Dynamics](University-Physics/10-Rotational-Dynamics/10-Rotational-Dynamics.html)
 - [11: Equilibrium](University-Physics/11-Equilibrium/11-Equilibrium.html)
 - [21: Electric Charge and Fields](University-Physics/21-Electric_Charge_and_Fields/21-Coulombs-Law.html)
 - [22: Electric Flux and Gauss's Law](University-Physics/22-Gauss_Law/22-Gauss-Law.html)
