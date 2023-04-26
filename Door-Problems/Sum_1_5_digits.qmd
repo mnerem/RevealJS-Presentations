@@ -1,0 +1,28 @@
+---
+format:
+  revealjs:
+    logo: qr_digit_sum.png
+    css: logo.css
+    chalkboard: true
+    navigation-mode: grid
+    controls: true
+    controls-tutorial: true
+    transition: convex
+---
+
+## Sum Digits
+
+Let $S$ be the set of all 5 digit numbers created
+using $1,2,3,4,5$ **without** repetition.
+
+What is the sum of all numbers in $S$?
+
+| In $S$  | Not in $S$ |
+|---------|------------|
+| $12345$ | $22133$    |
+| $34152$ | $42053$    |
+| $51243$ | $10043$    |
+
+::: aside
+Link to solution: [https://youtu.be/wamTGA2R68s](https://youtu.be/wamTGA2R68s)
+:::
