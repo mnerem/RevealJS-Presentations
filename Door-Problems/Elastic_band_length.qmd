@@ -1,0 +1,15 @@
+---
+format:
+  revealjs:
+    css: logo.css
+    chalkboard: true
+    navigation-mode: grid
+    controls: true
+    controls-tutorial: true
+    transition: convex
+---
+
+# How long is the elastic band?
+
+![](elastic-band-length.svg){fig-align="left" width=450}
+

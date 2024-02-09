@@ -46,6 +46,7 @@
 - [Infinite Area of Square Inscribed Circle](Door-Problems/Square-Infinite-Circle-Area.html)
 - [Goat Grazing Problem](Door-Problems/Goat-Graze-Problem.html)
 - [Digit Sum](Door-Problems/Sum_1_5_digits.html)
+- [Elastic Band Length](Door-Problems/Elastic_band_length.html)
 
 # Science Fun Facts
 - [Boarding Airplanes Algorithms](SFF/Optimal-Boarding-Planes/Optimal-Boarding-Planes.html)
